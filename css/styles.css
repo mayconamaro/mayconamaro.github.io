@@ -41,7 +41,7 @@ body {
     background-color: var(--bg-color);
 }
 
-h1::selection, p::selection, a::selection, footer::selection, q::selection, span::selection {
+h1::selection, p::selection, a::selection, footer::selection, q::selection, span::selection, .tutoring-info li::selection {
     color: var(--selection-tx);
     background-color: var(--selection-bg);
 }
@@ -99,7 +99,7 @@ nav {
     transform:scaleX(1);
 }
 
-.about-me h1 {
+.about-me h1, .tutoring-info h1{
     text-align: center;
     font-size: 48px;
     font-weight: var(--heading-weight);
@@ -170,6 +170,131 @@ footer {
     color: var(--link-color);
     font-size: 18px;
 }
+
+.info {
+    list-style: none;
+    padding-left: 9%;
+    padding-top: 30px;
+    color: var(--quotation);
+}
+
+.info i {
+    padding-right: 10px;
+}
+
+.info .fa-map-marker-alt {
+    padding-right: 13px;
+}
+
+.info li {
+    padding-top: 10px;
+}
+
+.week-content {
+    padding-top: 30px;
+    width: 82%;
+    margin: auto;
+}
+
+.week-content ul {
+    list-style: none;
+}
+
+.week-content li {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.week {
+    color: var(--link-color);
+}
+
+.week-topic {
+    color: var(--font-color);
+    padding-left: 30px;
+}
+
+.file-link-container {
+    padding-left: 30px;
+    font-size: 24px;
+}
+
+.file-link a {
+    color: var(--social-color);
+}
+
+.file-link a:hover {
+    color: var(--link-color);
+}
+
+.file-link.inactive {
+    visibility: hidden;
+}
+
+.presenca a {
+    color: var(--quotation);
+    text-decoration: none;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: var(--quotation);
+}
+
+.presenca a:hover {
+    font-weight: bold;
+}
+
+
+/* -- Tooltips -- */
+
+ /* Tooltip container */
+ .tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--border);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Quicksand', 'sans-serif';
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--border) transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  } 
 
 /* --- Dark mode --- */
 
