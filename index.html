@@ -1,101 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF8" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="fontawesome-5.12/css/all.min.css"/>
+        <title>Maycon Amaro - Home Page</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="toggle-wrapper">
+                    <label class="toggle" for="toggle">
+                        <input type="checkbox" id="toggle" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <div class="menu-container">
+                    <ul>
+                        <li><a href="tutoria/index.html" target="_self" class="special-underline">tutoring</a></li>
+                        <li><a href="index.html" target="_self" class="special-underline">about me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-  <head>
+        <section class="about-me">
+            <h1>It's a me, Maycon!</h1>
+            <div class="about-me-text-container">
+                <p>Hello, there! I'm Maycon Amaro, a Computer Science undergraduate student at <a href="https://ufop.br" target="_blank">Universidade Federal de Ouro Preto</a>, in Brazil. I love programming languages, logic, formal semantics, functional programming, type theory and, more informally, philosophy. In fact, I'm a loyal servant of <a href="https://ncatlab.org/nlab/show/computational+trinitarianism" target="_blank">computational trinitarianism</a> and I want to be a professor/lecturer in the future.</p>
+            </div>
+        </section>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Maycon Amaro Personal Page</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
-
-  </head>
-
-  <body id="page-top">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="./projects/">Projects</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Maycon
-            <span class="text-primary">Amaro</span>
-          </h1>
-          <div class="subheading mb-5">Federal University of Ouro Preto, Ouro Preto · Minas Gerais - Brazil ·
-            <a href="mailto:maycon.amaro@decom.ufop.br">maycon.amaro@decom.ufop.br</a>
-          </div>
-          <p class="mb-5">Computer Science Undergratuate Student</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://br.linkedin.com/in/maycon-amaro-551935120" title="LinkedIn">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/mayconamaro" title="Github">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="http://lattes.cnpq.br/4331484712995048" title="CV Lattes">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
+        <div class="social-container">
+            <ul>
+                <li><a href="https://github.com/mayconamaro" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://twitter.com/mayislambda" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="mailto:maycon.amaro@decom.ufop.br" target="_blank"><i class="far fa-envelope"></i></a></li>
+                <li><a href="https://br.linkedin.com/in/mayconamaro97" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
         </div>
-      </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <section class="quotation">
+            <q>all you need is lambda</q>
+            <span class="author">- <a href="https://haskellbook.com/" target="_blank">Alen & Moronuki</a></span>
+        </section>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <footer>
+            made with <span class="heart">❤︎</span> by Maycon Amaro in 2020.
+        </footer>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-
-  </body>
-
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
