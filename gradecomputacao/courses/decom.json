@@ -1,0 +1,378 @@
+[
+    {
+        "id": "BCC201",
+        "title": "Introdução à Programação",
+        "credits": 90,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC265",
+        "title": "Eletrônica para Computação",
+        "credits": 90,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC501",
+        "title": "Introdução à Ciência da Computação",
+        "credits": 30,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM122",
+        "title": "Cálculo Diferencial e Integral I",
+        "credits": 90,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM131",
+        "title": "Geometria Analítica e Cálculo Vetorial",
+        "credits": 60,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC101",
+        "title": "Matemática Discreta I",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC202",
+        "title": "Estrutura de Dados I",
+        "credits": 90,
+        "requires": ["BCC201"],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC266",
+        "title": "Organização de Computadores",
+        "credits": 60,
+        "requires": ["BCC201"],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC324",
+        "title": "Interação Humano-Computador",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "EAD700",
+        "title": "Prática de Leitura e Produção de Textos",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM123",
+        "title": "Cálculo Diferencial e Integral II",
+        "credits": 60,
+        "requires": ["MTM122"],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC102",
+        "title": "Matemática Discreta II",
+        "credits": 60,
+        "requires": ["BCC101"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC203",
+        "title": "Estrutura de Dados II",
+        "credits": 60,
+        "requires": ["BCC202"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC221",
+        "title": "Programação Orientada a Objetos",
+        "credits": 60,
+        "requires": ["BCC202"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC222",
+        "title": "Programação Funcional",
+        "credits": 60,
+        "requires": ["BCC201"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC263",
+        "title": "Arquitetura de Computadores",
+        "credits": 60,
+        "requires": ["BCC266"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM112",
+        "title": "Introdução à Álgebra Linear",
+        "credits": 60,
+        "requires": ["MTM131"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC204",
+        "title": "Teoria dos Grafos",
+        "credits": 60,
+        "requires": ["BCC202"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC264",
+        "title": "Sistemas Operacionais",
+        "credits": 60,
+        "requires": ["BCC202", "BCC263"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC322",
+        "title": "Engenharia de Software I",
+        "credits": 60,
+        "requires": ["BCC221"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC361",
+        "title": "Redes de Computadores",
+        "credits": 60,
+        "requires": ["BCC266"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC760",
+        "title": "Cálculo Numérico",
+        "credits": 60,
+        "requires": ["BCC201", "MTM112"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "EST202",
+        "title": "Estatística e Probabilidade",
+        "credits": 60,
+        "requires": ["MTM122"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC241",
+        "title": "Projeto e Análise de Algoritmos",
+        "credits": 60,
+        "requires": ["BCC204"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC244",
+        "title": "Teoria da Computação",
+        "credits": 60,
+        "requires": ["BCC102", "BCC204"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC321",
+        "title": "Banco de Dados I",
+        "credits": 60,
+        "requires": ["BCC203"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC323",
+        "title": "Engenharia de Software II",
+        "credits": 60,
+        "requires": [],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC362",
+        "title": "Sistemas Distribuídos",
+        "credits": 60,
+        "requires": ["BCC361"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC502",
+        "title": "Metodologia Científica em Ciência da Computação",
+        "credits": 30,
+        "requires": [720],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC325",
+        "title": "Inteligência Artifical",
+        "credits": 60,
+        "requires": ["BCC101", "BCC202"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC326",
+        "title": "Processamento de Imagens",
+        "credits": 60,
+        "requires": [],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC327",
+        "title": "Computação Gráfica",
+        "credits": 60,
+        "requires": ["BCC202", "MTM112"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC328",
+        "title": "Construção de Compiladores I",
+        "credits": 60,
+        "requires": ["BCC222", "BCC244"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC342",
+        "title": "Introdução à Otimização",
+        "credits": 60,
+        "requires": ["BCC201"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC392",
+        "title": "Monografia I",
+        "credits": 120,
+        "requires": [1500, "BCC502"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC503",
+        "title": "Informática e Sociedade",
+        "credits": 30,
+        "requires": [1500],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "FIL101",
+        "title": "Introdução à História da Filosofia",
+        "credits": 60,
+        "requires": [1500],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC393",
+        "title": "Monografia II",
+        "credits": 120,
+        "requires": ["BCC392"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "DIR260",
+        "title": "Direito da Informática",
+        "credits": 30,
+        "requires": [1500],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "PRO302",
+        "title": "Ações Empreendedoras",
+        "credits": 60,
+        "requires": [1500],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "elt001",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [720],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "elt002",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [720],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "elt003",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [720],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "elt004",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [720],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "elt005",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [720],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "elt006",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [720],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "fct001",
+        "title": "Disciplina Facultativa",
+        "credits": 60,
+        "requires": [720],
+        "quarter": 8,
+        "isCompleted": false
+    }
+]
