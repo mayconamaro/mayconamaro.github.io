@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:wght@400;600&family=Source+Serif+Pro&display=swap');
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url(JetBrainsMono-Regular.woff2) format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.base-color {
+    background-color: #00d463;
+}
+
+.snd-color {
+    background-color: #454545;
+}
+
+.trd-color {
+    background-color: #92dce5;
+}
+
+.fth-color {
+    background-color: #f9564f;
+}
+
+.five-color {
+    background-color: #eee5e9;
+}
+
+.six-color {
+    background-color: #266dd3;
+}
+
+.svn-color{
+    background-color: #fec601;
+}
+
+h1, h2, .header-demo, .math-logic {
+   font-family: 'Source Sans Pro', sans-serif; 
+   font-weight: 600;
+}
+
+.math-logic {
+    font-size: 30px;
+    text-align: center;
+}
+
+p, li {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+.code-demo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+}
+
+.decorative {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 24px;
+}
+
+.press-text {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+}
+
+.header-demo {
+    font-size: 24px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 36px;
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+}
+
+a, a:visited {
+    color: #266dd3;
+}
+
+a:hover {
+    color: #00d463;
+}
+
+.logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.left, .right, .upper {
+    width: auto;
+    height: 200px;
+}
+
+.left, .right {
+    padding-top: 30px;
+}
+
+.upper {
+    padding-bottom: 30px;
+}
+
+.logo-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #454545;
+}
+
+.colors-container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.color-demo {
+    width: 100px;
+    height: 300px;
+}
+
+.icons > img {
+    height: 50px;
+    width: auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+}
