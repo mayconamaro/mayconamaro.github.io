@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:wght@400;600&family=Source+Serif+Pro&display=swap");
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url(fonts/JetBrainsMono-Regular.woff) format("woff"); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px; }
+
+h1::selection, h2::selection, a::selection, p::selection, li::selection, span::selection {
+  background-color: #fec601;
+  color: black; }
+
+.page-content {
+  padding-top: 120px;
+  width: 1000px;
+  margin: auto; }
+
+header .wrapper {
+  display: flex;
+  justify-content: center; }
+
+.site-nav {
+  border-bottom: solid 2px #eee5e9;
+  width: 1000px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  background-color: white;
+  z-index: 2; }
+
+.site-nav > p {
+  font-size: 1.2em; }
+
+.menu-links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 700px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.page-link, .page-link:visited {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #454545; }
+
+.page-link.active {
+  color: black;
+  border-bottom: 1px solid #00d463; }
+
+.logo {
+  margin-left: 15px; }
+
+.mush {
+  height: 50px;
+  width: auto;
+  position: relative; }
+
+.mush.left, .mush.right {
+  top: 5px; }
+
+.mush.middle {
+  bottom: 5px; }
+
+.post-list a, .post-list a:visited {
+  color: #454545; }
+
+.post-list h2 {
+  font-size: 1.777em; }
+
+.meta-items > * {
+  padding-right: 20px; }
+
+h1, h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600; }
+
+h1 {
+  font-size: 4.209em;
+  padding-bottom: 30px; }
+
+h1::after {
+  content: "";
+  display: block;
+  border-bottom: 8px solid #f9654f;
+  width: 65px;
+  position: relative;
+  bottom: 10px; }
+
+h2 {
+  font-size: 2.369em;
+  padding-bottom: 15px;
+  padding-top: 35px; }
+
+a, a:visited {
+  color: #266dd3; }
+
+a:hover {
+  color: #00d463; }
+
+.people-list {
+  list-style: none; }
+
+.people-list > li {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  padding-bottom: 22px; }
+
+.people-list > li img {
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  position: relative; }
+
+.resume-link {
+  display: flex;
+  justify-content: space-between;
+  width: 85px; }
