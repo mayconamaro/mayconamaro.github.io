@@ -7,49 +7,413 @@
 <meta name="generator" content="Jekyll v3.8.7" />
 <meta property="og:title" content="Papers" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="mayconamaro.xyz/novo_lives/papers/" />
-<meta property="og:url" content="mayconamaro.xyz/novo_lives/papers/" />
+<meta name="description" content="The research group in Languages, Verification and Software Specification of Federal University of Ouro Preto (UFOP) in Brazil." />
+<meta property="og:description" content="The research group in Languages, Verification and Software Specification of Federal University of Ouro Preto (UFOP) in Brazil." />
+<link rel="canonical" href="/papers/" />
+<meta property="og:url" content="/papers/" />
 <meta property="og:site_name" content="LiVES" />
 <script type="application/ld+json">
-{"@type":"WebPage","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","url":"mayconamaro.xyz/novo_lives/papers/","headline":"Papers","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"/papers/","description":"The research group in Languages, Verification and Software Specification of Federal University of Ouro Preto (UFOP) in Brazil.","headline":"Papers","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/novo_lives/assets/main.css"><link type="application/atom+xml" rel="alternate" href="mayconamaro.xyz/novo_lives/feed.xml" title="LiVES" /></head>
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="icon" type="image/ico" href="/assets/icons/favicon.ico"/><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="LiVES" /></head>
 <body><header class="" role="banner">
 
   <div class="wrapper"><nav class="site-nav">
-        <div class='logo'><img class="mush left" src="../assets/icons/mushroom.svg" alt="Green Mushroom from Super Mario at left"><img class="mush middle" src="../assets/icons/mushroom.svg" alt="green mushroom from Super Mario at middle"><img class="mush right" src="../assets/icons/mushroom.svg" alt="green mushroom from Super Mario at right"></div>
-          <div class="menu-links"><a class="page-link" href="/novo_lives/about/">About</a><a class="page-link" href="/novo_lives/blog/">Blog</a><a class="page-link" href="/novo_lives/">home</a><a class="page-link" href="/novo_lives/people/">People</a><a class="page-link" href="/novo_lives/projects/">Projects</a><a class="page-link active" href="/novo_lives/papers/">Papers</a><a class="page-link" href="/novo_lives/talks/">Talks</a></div>
+        <div class='logo'><img class="mush left" src="/assets/icons/mushroom.svg" alt="Green Mushroom from Super Mario at left"><img class="mush middle" src="/assets/icons/mushroom.svg" alt="green mushroom from Super Mario at middle"><img class="mush right" src="/assets/icons/mushroom.svg" alt="green mushroom from Super Mario at right"></div>
+          <div class="menu-links"><a class="page-link" href="/">LiVES</a><a class="page-link" href="/people/">People</a><a class="page-link active" href="/papers/">Papers</a><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/talks/">Talks</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        
+        <h1>Papers</h1><ul class="papers-list"><li>
+        <h2>
+            A Mechanized Proof of a Textbook Type Unification Algorithm
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Revista de Informática Teórica e Aplicada - RITA</span></div>
+      <p>Unification is the core of type inference algorithms for modern functional programming languages, like Haskell and SML. As a first step towards a formalization of a type inference algorithm for such programming languages, we present a formalization in Coq of a type unification algorithm that follows classic algorithms presented in programming language textbooks. We also report on the use of such formalization to build a correct type inference algorithm for the simply typed λ-calculus.</p>
+
+<p><a href="https://seer.ufrgs.br/rita/article/view/Vol27_nr3_13">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Transactional Boosting no Glasgow Haskell Compiler
+        </h2>
+     <div class="meta-items"> <span class="post-meta">WSCAD2018 - XIX Simpósio Brasileiro de Computação de Alto Desempenho</span></div>
+      <p>Transactional Boosting é uma técnica que pode ser usada para transformar ações linearmente concorrentes em ações transacionalmente concorrentes, possibilitando assim sua utilização em blocos transacionais. Esta técnica pode ser utilizada para resolução de falsos conflitos, evitando assim a perda de desempenho de algumas aplicações. O objetivo deste trabalho é apresentar uma extensão do STM Haskell, bem como as modificações necessárias ao Run-Time System do compilador, para permitir o desenvolvimento de aplicações que utilizam Transactional Boosting, e assim apresentar a viabilidade desta técnica em Haskell.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/boost-stm.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            A Type-Directed Algorithm to Generate Well-Typed Featherweight Java Programs
+        </h2>
+     <div class="meta-items"> <span class="post-meta">SBMF - Brazilian Syposium on Formal Methods</span></div>
+      <p>Property-based testing of compilers or programming languages semantics is difficult to accomplish 
+because it is hard to design a random generator for valid programs. Most compiler test tools do not 
+have a well-specified way of generating type-correct programs, which is a requirement for such 
+testing activities. In this work, we formalize a type-directed procedure to generate random
+well-typed programs in the context of Featherweight Java, a well-known object-oriented calculus 
+for the Java programming language. We implement the approach using the Haskell programming language 
+and verify it against relevant properties using QuickCheck, a library for property-based testing.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/typedirectedFJ.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Property-Based Testing for Lambda Expressions Semantics in Featherweight Java
+        </h2>
+     <div class="meta-items"> <span class="post-meta">SBLP - Brazilian Syposium on Programming Languages</span></div>
+      <p>The release of Java 8 represents one of the most significant updates to the Java 
+language since its inception. The addition of lambda-expressions allows the treatment 
+of code as data in a compact way, improving the language expressivity. This paper addresses 
+the problem of defining rigorous semantics for new features of Java, such as lambda-expressions 
+and default methods, using Featherweight Java (FJ), a well-known object-oriented calculus. 
+To accomplish this task, we embed the formalization of these new features in two different semantics, 
+checking them for safety properties using QuickCheck, a property-based testing library for Haskell.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/FJsemantics.pdf">Download paper here</a></p>
+
+
+    </li><li>
+        <h2>
+            Towards certified virtual machine-based regular expression parsing
+        </h2>
+     <div class="meta-items"> <span class="post-meta">SBLP - Brazilian Syposium on Programming Languages</span></div>
+      <p>Regular expressions (REs) are pervasive in computing. We use REs in text editors, string search tools
+(like GNU-Grep) and lexical analysers generators. Most of these tools rely on converting regular
+expressions to its corresponding finite state machine or use REs derivatives for directly parse an
+input string. In this work, we investigate the suitability of another approach: instead of
+using derivatives or generate a finite state machine for a given RE, we developed a virtual machine
+(VM) for parsing regular languages, in such a way that a RE is merely a program executed by the VM
+over the input string. We developed a prototype implementation in Haskell, tested it using QuickCheck and
+provided proof sketches of its correctness with respect to RE standard inductive semantics.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/regexvm-paper.pdf">Download paper here</a></p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/regexvm-report.pdf">Technical report</a></p>
+
+<p><a href="https://github.com/rodrigogribeiro/regexvm">Implementation and Coq proof scripts</a></p>
+
+    </li><li>
+        <h2>
+            Type Inference for GADTs, OutsideIn and Anti-unification
+        </h2>
+     <div class="meta-items"> <span class="post-meta">SBLP - Brazilian Syposium on Programming Languages</span></div>
+      <p>Support for generalized algebraic data types (GADT) in extensions of Haskell allows functions 
+defined over GADTs to be written without the need for type annotations in some cases, but it 
+requires type annotations in most of them. This paper presents a type inference algorithm for 
+GADTs that extends OutsideIn algorithm using anti-unification to capture the relationship between 
+the types of arguments and result of GADT functions. This approach allows inference in cases where 
+the relationship between types of pattern matches is explicit in the code, allowing the type annotation 
+in cases where the relationship is not explicit.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/GADT18.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Generating Random Well-Typed Featherweight Java Programs Using QuickCheck
+        </h2>
+     <div class="meta-items"> <span class="post-meta">CLEI - The Latin American Computing Conference</span></div>
+      <p>Currently, Java is one of the most used programming language, being adopted in many large projects,
+where applications reach a level of complexity for which manual testing and human inspection are not 
+enough to guarantee quality in software development. Even when using automated unit tests, such tests 
+rarely cover all interesting cases of code, which means that a bug could never be discovered, once the 
+code is tested against the same set of rules over and over again. This paper addresses the problem of 
+generating random well-typed programs in the context of Featherweight Java, a well-known object-oriented 
+calculus, using QuickCheck, a Haskell library for property-based testing.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/CLEIFJ.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Formal Semantics for Java-like Languages and Research Opportunities
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Revista de Informática Teórica e Aplicada</span></div>
+      <p>Currently, Java is one of the most used programming languages, being adopted in many large projects, 
+where applications reach a level of complexity for which manual testing and human inspection are not 
+enough to guarantee quality in software development. Because of that, there is a growing research field 
+that concerns the formalization of small subsets of Java-like languages aimed to conduct studies that 
+were impossible to achieve through informal approaches. In this context, the objective of this paper 
+is twofold: the discussion of the state-of-the-art on Java-like semantics and the presentation of 
+research opportunities in this area. For the first goal, we present a research about Java-like formal 
+semantics, filtering those that provide some insights in type-safety proofs, choosing the four most 
+cited projects to be presented in details. We also briefly present some related studies that extended 
+the originals aggregating useful features. Additionally, we provide a comparison between the most cited 
+projects in order to show which functionalities are covered by each one of them. As for the second goal, 
+we discuss possible future studies that can be performed by using the presented formal semantics.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/ritaFJ.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Inference of Static Semantics for Incomplete C Programs
+        </h2>
+     <div class="meta-items"> <span class="post-meta">ACM POPL - Principles of Programming Languages</span></div>
+      <p>Incomplete source code naturally emerges in software development: during the design phase, while evolving, testing and analyzing programs. Therefore, the ability to understand partial programs is a valuable asset. However, this problem is still unsolved in the C programming language. Difficulties stem from the fact that parsing C requires, not only syntax, but also semantic information. Furthermore, inferring types so that they respect C’s type system is a challenging task. In this paper we present a technique that lets us solve these problems. We provide a
+unification-based type inference capable of dealing with C intricacies. The ideas we present let us reconstruct partial C programs into complete well-typed ones. Such program reconstruction has several applications: enabling static analysis tools in scenarios where software components may be absent; improving static analysis tools that do not rely on build-speci cations; allowing stub-generation and testing tools to work on snippets; and assisting programmers on the extraction of reusable data-structures out of the program parts that use them. Our evaluation is performed on source code from a variety of C libraries such as GNU’s Coreutils, GNULib, GNOME’s GLib, and GDSL; on implementations from Sedgewick’s books; and on snippets from popular open-source projects like CPython, FreeBSD, and Git.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/inferenceC.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            A domain specific language for drum beat programming.
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Brazilian Symposium on Computer Music 2017</span></div>
+      <p>This paper describes HDrum, a Domain Specific Language for writing drum patterns.
+Programs written in HDrum look similar to the grids, available in sequencers and
+drum machines, used to program drum beats, but as the language has an inductive
+definition we can write abstractions to manipulate drum patterns. HDrum is embedded
+in the Haskell functional program- ming language, hence it is possible to implement
+Haskell functions that manipulate patterns generating new patterns. The paper also
+presents a case study using HDrum, an implementation of The Clapping Music, a
+minimalistic music written by Steve Reich in 1972. The HDrum language is
+currently compiled into midi files.</p>
+
+<p><a href="https://sites.google.com/site/hdrumlanguage/">HDrum project page</a></p>
+
+    </li><li>
+        <h2>
+            Certified bit-coded regular expression parsing
+        </h2>
+     <div class="meta-items"> <span class="post-meta">21th Brazilian Symposium on Programming Languages</span></div>
+      <p>We describe the formalization of a regular expression (RE) parsing algorithm
+that produces a bit representation of its parse tree in the dependently typed
+language Agda.  The algorithm computes bit-codes using Brzozowski derivatives
+and we prove that produced codes are equivalent to parse trees ensuring soundness
+and completeness w.r.t an inductive RE semantics. We include the certified algorithm
+in a tool developed by us, named verigrep, for regular expression based search in
+the style of the well known GNU grep. Practical experiments conducted with this tool
+are reported.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/bitregex.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Compilação parcial de programas escritos em C
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Programming Languages - 20th Brazilian Symposium on Programming Languages.</span></div>
+      <p>Há situações em que é desejável compilar programas cujo código fonte não está totalmente
+disponível. Tal necessidade aparece em ambientes integrados de desenvolvimento que
+auto-completam partes do programa, por exemplo, e já levou à criação de compiladores
+parciais para linguagens como Java e Python. Por outro lado, até o momento não existe
+um compilador parcial de programas escritos em C. Este artigo preenche essa lacuna.
+Com tal propósito, descreve-se um parser capaz de escanear código fonte C incompleto,
+e um inferidor de tipos capaz de reconstruir definições de tipos cujas declarações não
+estão presentes naquele código fonte. Ao contrário de algoritmos de inferência de tipos
+usados em linguagens funcionais, a técnica proposta neste trabalho reconstrói declarações
+ausentes de tipos algébricos, criando novas definições que tendem a aproximar aquelas
+presentes no programa original. Um protótipo descrevendo a nova abordagem é apresentado.
+Tal protótipo é capaz de reconstruir trechos não triviais de programas parcialmente
+disponíveis, permitindo a geração de código binário executável a partir deles.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/partial-c.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Certified derivative based parsing of regular expressions
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Programming Languages - 20th Brazilian Symposium on Programming Languages.</span></div>
+      <p>We describe the formalization of a certified algorithm for regular expression 
+parsing based on Brzozowski derivatives, in the dependently typed language Idris. 
+The formalized algorithm produces a proof that an input string matches a given regular 
+expression or a proof that no matching exists. A tool for regular expression based 
+search in the style of the well known GNU grep has been developed with the certified 
+algorithm, and practical experiments were conducted with this tool.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/regex.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Optional type classes for Haskell
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Programming Languages - 20th Brazilian Symposium on Programming Languages.</span></div>
+      <p>This paper explores an approach for allowing type classes to be optionally declared by programmers, 
+i.e. programmers can overload symbols without declaring their types in type classes.
+The type of an overloaded symbol is, if not explicitly defined in a type class, automatically 
+determined from the anti-unification of instance types defined for the symbol in the relevant module.
+This depends on a modularization of instance visibility, as well as on a redefinition of Haskell’s 
+ambiguity rule. The paper presents the modifications to Haskell’s module system that are necessary 
+for allowing instances to have a modular scope, based on previous work by the authors. The definition 
+of the type of overloaded symbols as the anti-unification of available instance types and the redefined 
+ambiguity rule are also based on previous works by the authors.
+The added flexibility to Haskell-style of overloading is illustrated by defining a type system and by showing 
+how overloaded record fields can be easily allowed with such a type system.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/optional.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            A Mechanized textbook proof of a type unification algorithm
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Formal Methods: Foundations and Applications - 18th Brazilian Symposium on Formal Methods.</span></div>
+      <p>Unification is the core of type inference algorithms for mod- ern functional programming languages, 
+like Haskell. As a first step towards a formalization of a type inference algorithm for such 
+programming languages, we present a formalization in Coq of a type unification algorithm that follows 
+classic algorithms presented in programming language textbooks.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/unify.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Ambiguity and constrained polymorphism
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Science of Computer Programming</span></div>
+      <p>This paper considers the problem of ambiguity in Haskell-like languages. 
+The relation between ambiguity and overloading resolution and the disadvantages 
+of following the standard notion of ambiguity in the con- text of constrained 
+polymorphism are exposed and discussed. A new definition of ambiguity is presented, 
+where existence of more than one instance for an expression type is considered only 
+after overloading resolution. We identify overloading resolution by the presence of 
+unreachable variables in constraints on the type of the expression. We discuss 
+advantages of adopting this ambiguity definition in Haskell.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/ambiguity.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Type inference for GADTs and anti-unification
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Programming Languages - 19th Brazilian Symposium on Programming Languages.</span></div>
+      <p>Nowadays the support of generalized algebraic data types (GADTs) in extensions of Haskell 
+allows functions defined over GADTs to be written without the need for type annotations in 
+some cases and requires type annotations in other cases. In this paper we present a type 
+inference algorithm for GADTs that is based on a closed-world approach to overloading and 
+uses anti-unification and constraint-set satisfiability to infer the relationship between 
+the types of function arguments and result. Through some examples, we show how the proposed 
+algorithm allows more functions defined over GADTs to be written without the need for type annotations.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/gadt.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Ambiguity and context-dependent overloading
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Journal of the Brazilian Computer Society</span></div>
+      <p>This paper discusses ambiguity in the context of languages that support context-dependent 
+overloading, such as Haskell. A type system for a Haskell-like programming language, that 
+supports context-dependent overloading and follow the Hindley-Milner approach of providing 
+context-free type instantiation, allows distinct derivations of the same type for ambiguous 
+expressions. Such expressions are usually rejected by the type inference algorithm, which is 
+thus not complete with respect to the type system.
+Following the standard definition of ambiguity, satisfiability is tested - i.e. “the world is closed” — if only
+if overloading is (or should have been) resolved, that is, if and only if there exist unreachable variables 
+in the constraints on types of expressions. Nowadays satisfiability is tested in Haskell, in the presence of 
+multi-parameter type classes, only upon the presence of functional dependencies or an alternative mechanism 
+that specifies conditions for closing the world, and that may happen when there exist or not unreachable type 
+variables in constraints. The satisfiability trigger condition is then given automatically, by the existence 
+of unreachable variables in constraints, and does not need to be specified by programmers, using an extra 
+mechanism.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/ambiguity-context.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Terminating Constraint Set Satisfiability and Simplification Algorithms for Context-Dependent Overloading
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Journal of the Brazilian Computer Society</span></div>
+      <p>Algorithms for constraint set satisfiability and simplification of Haskell type class constraints 
+are used during type inference in order to allow the inference of more accurate types and to detect 
+ambiguity. Unfortunately, both constraint set satisfiability and simplification are in general undecidable, 
+and the use of these algorithms may cause non-termination of type inference. This paper presents 
+algorithms for these problems that terminate on any given input, based on the use of a criterion that is 
+tested on each recursive step.</p>
+
+<p>The use of this criterion eliminates the need of imposing syntactic conditions on Haskell type class and 
+instance declarations in order to guarantee termination of type inference in the presence of multi-parameter 
+type classes, and allows program compilation without the need of compiler flags for lifting such restrictions. 
+Undecidability of the problems implies the existence of instances for which the algorithm incorrectly reports 
+unsatisfiability, but we are not aware of any practical example where this occurs.</p>
+
+<p><a href="http://academicpages.github.io/files/decidable-sat.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Mechanized metatheory for a λ-calculus with trust types
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Journal of the Brazilian Computer Society</span></div>
+      <p>As computer programs become increasingly complex, techniques for ensuring trustworthiness of 
+information manipulated by them become critical. In this work, we use the Coq proof assistant 
+to formalise a λ-calculus with trust types, originally formulated by Ørbæk and Palsberg. We give 
+formal proofs of type soundness, erasure and simulation theorems and also prove decidability of 
+the typing problem. As a result of our formalisation a certified type checker is derived.</p>
+
+<p><a href="http://rodrigogribiero.github.io/files/trust.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Resolvedores SAT para Verificação de Consistência em Modelos de Características
+        </h2>
+     <div class="meta-items"> <span class="post-meta">Simpósio Mineiro de Computação</span></div>
+      <p>Linhas de produtos de software é uma nova abordagem de desenvolvimento de sistemas voltada ao reuso de software. As principais razões para se criar uma linha de produtos são a redução dos custos do processo, software mais confiável e de qualidade. Os modelos de características são uma forma diagramática de se modelar uma linha de produtos de software. Como os modelos estão crescendo em termos de suas características, um forte apoio ferramental se faz necessário para suportar o processo de modelagem,como por exemplo, a verificação de consistência dos mesmos. Assim, este trabalho tem como objetivo propor um algoritmo resolvedor SAT especializado para depurar modelos de características. O algoritmo proposto possui pontos de extensão para o desenvolvimento de novos algoritmos e para integração com ferramentas de modelagem de características. É esperado contribuir, desta forma, com a comunidade de SPL incluindo desenvolvedores de ferramentas de modelagem e usuários destas ferramentas.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/satverchar.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Programação de Horários Escolares Através de SAT e Metaheurísticas
+        </h2>
+     <div class="meta-items"> <span class="post-meta">X Simpósio Brasileiro de Inteligência Computacional</span></div>
+      <p>O Problema da Programação de Horários Escolares (PPHE) é classificado como NP-Difícil e heurísticas para sua solução são alvo de diversas pesquisas na área de computação, matemática e pesquisa operacional. Normalmente, o problema é resolvido através de metaheurísticas como Algoritmos Genéticos, Simulated Annealing e GRASP. O presente trabalho propõe uma abordagem alternativa. Pretende-se reduzir do problema ao problema da Satisfazibilidade Proposicional (SAT) e resolvê- lo usando um resolvedor SAT para geração de uma solução inicial. Como não é viável tratar todos os requisitos PPHE através de satisfazibilidade, posteriormente, aplicar-se-á as metaheurísticas Busca Tabu e Simulated Annealing para otimização da solução obtida. Por fim serão apresentados os resultados de cada algoritmos e uma comparação com outro trabalho do gênero.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/satimetabling.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Uma Abordagem Híbrida de SAT e Busca Tabu para o Problema da Programação de Horários Escolares
+        </h2>
+     <div class="meta-items"> <span class="post-meta">XLIII Simpósio Brasileiro de Pesquisa Operacional</span></div>
+      <p>O Problema da Programação de Horários Escolares (PPHE) é classificado como NP-Difícil e heurísticas para sua solução são alvo de diversas pesquisas na área de computação, matemática e pesquisa operacional. Normalmente, o problema é resolvido através de abordagens metaheurísticas como Algoritmos Genéticos, Simulated Annealing e GRASP. O presente trabalho propõe uma abordagem alternativa. Pretende-se reduzir do problema ao problema da Satisfazibilidade Proposicional (SAT) e resolvê-lo usando um resolvedor SAT para geração de uma solução inicial. Como não é viável tratar todos os requisitos PPHE através de satisfazibilidade, posteriormente, aplicar-se-á uma Busca Tabu para otimização da solução obtida. A eficiência da abordagem é avaliada comparando-a a abordagens conhecidas na literatura.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/sattabutimetabling.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            A Solution to Haskell's Multi-Parameter Type Class Dilemma
+        </h2>
+     <div class="meta-items"> <span class="post-meta">XIII Simpósio Brasileiro de Linguagens de Programação</span></div>
+      <p>The introduction of multi-parameter type classes in Haskell has been hindered because of problems associated to ambiguity, which occur due to the lack of type specialization during type inference. This paper proposes a
+minimalist, simple solution to this problem, which requires only a small change to the type inference algorithm and to what has been considered ambiguity in Haskell. It does not depend on the use of programmer specified functional dependencies between type class parameters nor any other extra mechanism, such as associated types. A type system and a type inference algorithm, sound and complete with respect to the type system, are presented.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/multiparam.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Compreensão de programas apoiada por uma linguagem de consulta em código fonte
+        </h2>
+     <div class="meta-items"> <span class="post-meta">IV Workshop de Manutenção Moderna de Software</span></div>
+      <p>Software maintenance is an stage of software development process that consumes great developers effort, raising total cost of the project. Du- ring this process, a comprehension task of the system implementation is requi- red. Therefore, tools supporting this proccess may facilitate the developer work. This paper shows a query language for source code based on relational concepts which works on a syntactic representation augmented with static semantics of the program (scopes, declarations and symbols use). It is presented, as vali- dation, how this source code query language may be applied in the program comprehension activity.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/metajscql.pdf">Download paper here</a></p>
+
+    </li><li>
+        <h2>
+            Iteradores, Templates e Consultas na Análise e Manipulação de Programas.
+        </h2>
+     <div class="meta-items"> <span class="post-meta">II Workshop de Manutenção Moderna de Software</span></div>
+      <p>A engenharia reversa e a reestruturação de programas são uteís em tarefas de
+manutenção e evolução de software. As ferramentas e meta-ferramentas para análise
+e manipulação de código-fonte têm um papel importante nestas atividades, contudo seu
+desenvolvimento é difícil dada à complexidade intrínsica desta classe de ferramentas.
+A existência de meta-ferramentas melhores poderia facilitar a construção das ferramentas
+para análise e manipulação de código. Apesar de diversas meta-ferramentas já terem sido
+propostas, ainda não existe uma solução definitiva. Este trabalho propõe o uso integrado
+de iteradores, templates, e consultas relacionais para facilitar a construção de módulos
+para análise e manipulação de programas. Estes mecanismos são baseados nas noções de
+referências tipadas para código-fonte e de casamento de padrões em árvores sintáticas.
+Para demonstrar a efetividade desta abordagem, apresenta-se um construtor de grafos de semântica
+estática baseada em declarações, escopo e uso de símbolos. Para avaliar a performance
+das abordagens iterativas e declarativas, foram implementadas e analisadas duas refatorações.
+As meta-ferramentas apresentadas neste artigo apresentaram vantagens sobre outras meta-ferramentas,
+portanto podendo ser consideradas viáveis de serem introduzidas em processos de manutenção de software.</p>
+
+<p><a href="http://rodrigogribeiro.github.io/files/metaj.pdf">Download paper here</a></p>
+
+    </li></ul>
       </div>
-    </main><footer class="">
-  <!-- <data class="u-url" href="/novo_lives/"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">LiVES</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">LiVES</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
-      </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mayconamaro"><svg class="svg-icon"><use xlink:href="/novo_lives/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mayconamaro</span></a></li><li><a href="https://www.twitter.com/mayislambda"><svg class="svg-icon"><use xlink:href="/novo_lives/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">mayislambda</span></a></li></ul>
-</div>
-
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
-      </div>
-    </div>
-
-  </div> -->
-
+    </main><footer>
+ 
+  <p>This website was made with <img class="heart" src="/assets/icons/heart.svg" alt="A white heart in a light red rounded background"/> and <a href="https://jekyllrb.com/">Jekyll</a> in 2020</p>
 </footer>
 </body>
 
