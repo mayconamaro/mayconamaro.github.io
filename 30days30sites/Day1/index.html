@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Me - Portfolio</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="./css/styles.css"/> 
+
+        <!-- SEO Tags -->
+        <meta name="description" content="Someone's portfolio. A theme to practice in front-end
+        development"/>
+        <meta property="og:title" content="Me - Portfolio"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:description" content="Someone's portfolio. A theme to practice in front-end
+        development"/>
+        <meta property="og:site_name" content="Portfolio"/>
+        <link rel="canonical" href="http://mayconamaro.xyz"/>
+
+    </head>
+    <body>
+
+        <header class="site-header">
+            <a class="home-link" href="./"><h1>Someone</h1></a>
+            <nav class="site-navbar">
+                <ul class="nav-links">
+                    <li class="menu-item"><a class="menu-link" href="./#who">Who</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./#what">What</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./#where">Where</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="page-content">
+            <section id="who" class="page-section fst">
+                <h2>Who am I?</h2>
+                <img class="spotlight-photo" src="./images/bird.jpg" alt="A side view of an eagle's face"/>
+                <p>I'm a adventurer</p>
+            </section>
+            <section id="what" class="page-section snd">
+                <h2>What am I?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat.</p>
+                <button type="button" class="btn" onclick="whoami()" onkeypress="whoami()">
+                    <img class="icon" src="./images/search.svg" alt="A flat magnifying glass icon"/>
+                    Search
+                </button>
+            </section>
+            <section id="where" class="page-section trd">
+                <h2>Where to find me?</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <img class="card-image" src="./images/birds1.jpg" alt="A wall with bird on it, with a ocean in background"/>
+                    </div>
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <img class="card-image" src="./images/birds2.jpg" alt="Two seagulls flying in the sky. One of them is higher than the other"/>
+                    </div>
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <img class="card-image" src="./images/birds3.jpg" alt="A pier with several pelicans on the stumps"/>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Theme 'Me' created by <a class="footer-link" href="https://www.w3schools.com/">W3 Schools</a> and built by Maycon Amaro</p>
+        </footer>
+    
+    <script src="js/scripts.js"></script>
+    </body>
+</html>
