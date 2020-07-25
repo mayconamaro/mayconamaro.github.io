@@ -50,6 +50,10 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+h1, h2 {
+    font-weight: 400;
+}
+
 h1::selection, h2::selection, p::selection, a::selection, img::selection {
     background-color: var(--selection-bg-color);
     color: var(--selection-color);
