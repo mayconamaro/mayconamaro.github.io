@@ -59,6 +59,9 @@ h1::selection, h2::selection, p::selection, a::selection, img::selection {
     color: var(--selection-color);
 }
 
+a:focus, button:focus{
+    outline: 3px solid #FFC2C9;
+}
 
 
 /** Header **/
