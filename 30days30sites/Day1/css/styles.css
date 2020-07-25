@@ -108,13 +108,23 @@ h1::selection, h2::selection, p::selection, a::selection, img::selection {
     font-size: 1em;
     width: 100%;
     max-width: 150px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
     color: var(--text-color);
     box-shadow: 5px 5px 20px;
     cursor: pointer;
+
+    font-family: 'Noto Sans';
+    border: 0;
+    padding-right: 20px;
+    border-radius: 5px;
+    background-color: #eeeceb;
+    height: 56px;
+}
+
+.btn:hover {
+    background-color: white;
 }
 
 .icon {
