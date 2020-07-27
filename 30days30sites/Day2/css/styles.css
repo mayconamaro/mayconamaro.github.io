@@ -1,0 +1,178 @@
+/** Variables **/
+
+:root {
+    --bg-color: rgba(255, 255, 255, 0.85);
+    --menu-link-color: #524261;
+    --bg-image-color-overlay: rgba(37,41,28,0.77);
+    --box-shadows-color: black;
+    --home-content-text-color: white;
+    --text-selection-bg-color: rgba(250, 219, 222, 0.7);
+    --text-selection-bg-color-no-transparency: #F5B7BD;
+    --text-selection-color: black;
+    --button-bg-color: white;
+    --button-color: #524261;
+}
+
+/** Reset **/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+/** Common Properties **/
+
+.page-container {
+    background-image: url("../images/engagement.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--bg-image-color-overlay);
+    background-blend-mode: overlay;
+    min-height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-size: 18px;
+}
+
+a:focus {
+    outline: 2px solid var(--box-shadows-color);
+}
+
+h1::selection, h2::selection, p::selection, time::selection, span::selection{
+    background-color: var(--text-selection-bg-color);
+    color: var(--text-selection-color);
+    text-shadow: none;
+}
+
+a::selection {
+    background-color: var(--text-selection-bg-color-no-transparency);
+    color: var(--text-selection-color);
+    text-shadow: none;
+}
+
+/** Header **/
+
+.site-header {
+    background-color: var(--bg-color);
+    width: 90%;
+    max-width: 1366px;
+    margin: auto;
+    padding : 30px 20px;
+    box-shadow: 5px 5px 20px var(--box-shadows-color);
+}
+
+.menu-links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+}
+
+.menu-link, .menu-link:visited {
+    color : var(--menu-link-color);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+/** Content **/
+
+.home-page-content {
+    margin: auto;
+    padding: 30px 20px;
+    width: 90%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--home-content-text-color);
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+.fiance-names {
+    font-size: 8.2em;
+    font-family: 'Great Vibes', cursive;
+    text-shadow: 5px 5px 20px var(--box-shadows-color);
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.home-page-content > h2 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 4.1em;
+    text-shadow: 5px 5px 20px var(--box-shadows-color);
+    margin-bottom: 50px;
+}
+
+.wedding-data {
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 5px 5px 20px var(--box-shadows-color);
+}
+
+.separator {
+    padding: 0 1ch;
+}
+
+.link-btn, .link-btn:visited {
+    text-decoration: none;
+    color: var(--button-color);
+    background-color: var(--button-bg-color);
+    padding: 20px 30px;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;
+    box-shadow: 5px 5px 20px var(--box-shadows-color);
+}
+
+.link-btn:hover {
+    text-decoration: underline;
+}
+
+/** Footer **/
+
+.site-footer {
+    margin: auto;
+    width: 90%;
+    max-width: 1366px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    flex-shrink: 0;
+}
+
+.footer-link, .footer-link:visited {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/** Responsiveness adjustments **/
+
+@media only screen and (max-width: 620px) {
+    .menu-links {grid-template-columns: 1fr; gap: 15px;}
+}

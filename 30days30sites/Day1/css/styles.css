@@ -174,8 +174,10 @@ a:focus, button:focus{
 .card-container {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    margin: auto;
     margin-top: 50px;
+    max-width: 1500px;
 }
 
 .card-image {
@@ -196,6 +198,7 @@ a:focus, button:focus{
     display: grid;
     place-items: center;
     padding: 0 5%;
+    text-align: center;
 }
 
 .footer-link, .footer-link:visited {
