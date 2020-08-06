@@ -1,10 +1,10 @@
 /** Variables **/
 
 :root {
-    --bg-color: rgba(255, 255, 255, 0.85);
+    --bg-color: #fff;
     --menu-link-color: #524261;
     --common-text-color: white;
-    --bg-image-color-overlay: rgba(37,41,28,0.77);
+    --bg-image-color-overlay: rgba(0, 0, 0, 0.65);
     --box-shadows-color: black;
     --home-content-text-color: white;
     --text-selection-bg-color: rgba(250, 219, 222, 0.7);
@@ -63,9 +63,9 @@ a::selection {
 }
 
 h1 {
-    font-size: 4.209em;
+    font-size: 5.653em;
     font-weight: 400;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Parisienne', cursive;
     text-shadow: 5px 5px 20px var(--box-shadows-color);
     color: var(--common-text-color);
     text-align: center;
@@ -79,7 +79,8 @@ h1 {
     max-width: 1366px;
     margin: auto;
     padding : 30px 20px;
-    box-shadow: 5px 5px 20px var(--box-shadows-color);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-radius: 5px;
 }
 
 .menu-links {
@@ -93,7 +94,7 @@ h1 {
     color : var(--menu-link-color);
     text-decoration: none;
     font-size: 1.2em;
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .menu-link:hover {
@@ -107,7 +108,6 @@ main {
     padding: 30px 20px;
     width: 90%;
     max-width: 1366px;
-    flex: 1 0 auto;
 }
 
 
@@ -123,8 +123,9 @@ main {
     margin-top: 30px;
     margin-bottom: 15px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     flex-shrink: 0;
+    font-size: 0.707em;
 }
 
 .footer-link, .footer-link:visited {
@@ -148,25 +149,26 @@ main {
 }
 
 .fiance-names {
-    font-size: 8.2em;
-    font-family: 'Great Vibes', cursive;
-    text-shadow: 5px 5px 20px var(--box-shadows-color);
+    font-size: 6em;
+    font-family: 'Parisienne', cursive;
+    text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     font-weight: 400;
     margin-top: 30px;
+    line-height: 1.2;
 }
 
 .home-page-content > h2 {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 4.1em;
-    text-shadow: 5px 5px 20px var(--box-shadows-color);
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 3.998em;
+    text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     margin-bottom: 50px;
     text-align: center;
 }
 
 .wedding-data {
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 5px 5px 20px var(--box-shadows-color);
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     text-align: center;
 }
 
@@ -178,15 +180,18 @@ main {
     text-decoration: none;
     color: var(--button-color);
     background-color: var(--button-bg-color);
-    padding: 20px 30px;
+    padding: 20px 20px;
     font-size: 1.2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin-top: 60px;
-    box-shadow: 5px 5px 20px var(--box-shadows-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 5px;
 }
 
 .link-btn:hover {
     text-decoration: underline;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /** 'Nossa Historia' specific **/
@@ -196,11 +201,11 @@ main {
     align-items: center;
     flex-direction: column;
     color: var(--common-text-color);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .history-title, .photo-gallery-title {
-    font-size: 1.777em;
+    font-size: 2em;
     font-weight: 400;
     text-shadow: 5px 5px 20px var(--box-shadows-color);
     text-align: center;
@@ -210,22 +215,18 @@ main {
     margin-bottom: 15px;
 }
 
-.photo-gallery-title {
-    font-size: 2.369em;
-}
-
 .couple-history-container {
     display: grid;
-    grid-gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin-top: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 60px;
     margin-bottom: 80px;
-    
 }
 
 .history-card {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .history-card > p {
@@ -238,27 +239,34 @@ main {
     border: 2px solid var(--common-text-color);
     width: 80%;
     max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .photo-gallery {
     list-style: none;
     margin-top: 45px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1.5rem;
+    gap: 1.5rem;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     max-width: 1366px;
 }
 
 .photo {
     width: 100%;
-    max-width: 800px;
+    max-width: 400px;
     height: 100%;
-    box-shadow: 5px 5px 20px var(--box-shadows-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 5px;
 }
 
 /** Responsiveness adjustments **/
 
 @media only screen and (max-width: 620px) {
-    .menu-links {grid-template-columns: 1fr; gap: 15px;}
+    .menu-links {grid-template-columns: 1fr; gap: 1rem;}
+    .fiance-names, h1 {font-size: 5em;}
+    .home-page-content > h2 {font-size: 3.5em;}
+    .photo-gallery {grid-template-columns: 1fr; gap: 1rem;}
 }
