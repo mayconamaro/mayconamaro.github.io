@@ -47,21 +47,24 @@ body {
 h1 {
     font-size: 2.5em;
     font-family: 'Oregano', cursive;
+    font-weight: 400;
 }
   
 h2 {
-    font-size: 1.875em;
+    font-size: 2.369em;
     font-family: 'Jost', sans-serif;
     text-transform: capitalize;
-}
-  
-p {
-    font-size: 1em;
-    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 h1, h2 {
-    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
 }
 
 ::selection {
@@ -258,6 +261,6 @@ img::selection{
 }
 
 @media only screen and (max-width: 399px){
-    .nav-links { grid-template-columns: 1fr;}
+    .nav-links { grid-template-columns: 1fr; gap: 1rem;}
     .menu-item { text-align: center; }
 }
