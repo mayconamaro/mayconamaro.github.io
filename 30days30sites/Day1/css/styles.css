@@ -11,9 +11,12 @@
     --footer-bg-color: #2f2f2f;
     --footer-color: #dddddd;
     --footer-link-color: #FFD6DB;
-    --selection-bg-color: #FFC2C9;
+    --selection-bg-color: rgba(255, 194, 201, 0.996);
+    --img-selection-bg-color: rgba(255, 194, 201, 0.5);
     --selection-color: black;
     --footer-contrast-color: white;
+    --focus-darker-color: #bd505c;
+    --focus-lighter-color: #FFC2C9; 
 }
 
 
@@ -24,6 +27,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@media only screen and (prefers-reduced-motion : no-preference){
+
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 .site-header, .site-footer, .page-content {
@@ -54,13 +64,27 @@ h1, h2 {
     font-weight: 400;
 }
 
-h1::selection, h2::selection, p::selection, a::selection, img::selection {
+::selection {
     background-color: var(--selection-bg-color);
     color: var(--selection-color);
 }
 
-a:focus, button:focus{
-    outline: 3px solid #FFC2C9;
+img::selection{
+    background-color: var(--img-selection-bg-color);
+}
+
+:focus{
+    outline: 3px solid var(--focus-darker-color);
+}
+
+
+.btn:focus{
+    outline: 4px solid var(--text-color);
+}
+
+
+.footer-link:focus {
+    outline: 3px solid var(--focus-lighter-color);
 }
 
 
@@ -69,9 +93,14 @@ a:focus, button:focus{
 .site-header {
     background-color: var(--header-bg-color);
     padding: 15px 5%;
+}
+
+.header-container {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1500px;
 }
 
 .nav-links {
@@ -83,7 +112,7 @@ a:focus, button:focus{
     text-transform: uppercase;
     padding-top: 15px;
     font-family: 'Jost', sans-serif;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
 }
 
 .menu-link, .menu-link:visited, .home-link, .home-link:visited {
@@ -169,12 +198,19 @@ a:focus, button:focus{
 
 .snd > p {
     max-width: 81ch;
+    text-align: left;
+    line-height: 1.45;
+}
+
+.card > p{
+    text-align: left;
+    line-height: 1.45;
 }
 
 .card-container {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin: auto;
     margin-top: 50px;
     max-width: 1500px;
@@ -212,7 +248,11 @@ a:focus, button:focus{
 
 /** Responsive Design Adjusts **/
 
+@media only screen and (max-width: 642px) {
+    .header-container{ flex-direction: column; align-items: center;}
+}
+
 @media only screen and (max-width: 399px){
-    .nav-links { grid-template-columns: 1fr; }
-    .site-header{ flex-direction: column; }
+    .nav-links { grid-template-columns: 1fr;}
+    .menu-item { text-align: center; }
 }
