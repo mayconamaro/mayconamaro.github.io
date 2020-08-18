@@ -1,0 +1,217 @@
+/** Welcome to My Personal Page's Stylesheet
+    Feel free to inspire yourself and copy anything
+    on my design, just give me the credits =) **/
+
+/** Resets **/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/** Local Fonts **/
+
+/* Hurme No 4 — Obtained in FreeFonts.io */
+
+@font-face{
+    font-family: 'Hurme';
+    src: url('fonts/Hurmes/HurmeGeometricSans4\ Bold.otf') format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: 'Hurme';
+    src: url('fonts/Hurmes/HurmeGeometricSans4.otf') format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/** Common Properties **/
+
+body {
+    font-size: 18px;
+}
+
+.body-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    width: 98%;
+    max-width: 900px;
+    align-items: center;
+    margin: 30px auto;
+}
+
+h1, h2 {
+    font-family: 'Hurme';
+    font-weight: 700;
+}
+
+h1 { 
+    font-size: 3.052em;
+    display: inline-block;
+}
+
+h1::after{
+    content: "";
+    border-bottom: solid 15px #fee072;
+    position: relative;
+    bottom: 30px;
+    display: block;
+    z-index: -1;
+}
+
+h2 {
+    font-size: 2.441em;
+    margin-top: 0.6em;
+}
+
+p {
+    font-family: 'Source Serif Pro';
+    line-height: 1.5;
+}
+
+em, .menu, .social-links {
+    font-family: 'Hurme';
+    font-size: 1.1em;
+}
+
+.page-container {
+    max-width: 900px;
+    width: 100%;
+    padding: 30px 10px;
+    padding-left: 40px;
+    border-left: 3px dotted black;
+}
+
+::selection {
+    background-color: #fee07267;
+    color: black;
+}
+
+a::selection{
+    background-color: #A492F267;
+}
+
+a, a:visited {
+    color: #4825E4;
+}
+
+a:focus {
+    background-color: #4825e4;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 0 3px #4825E4;
+    outline: none;
+}
+
+.skip-nav {
+    position: absolute;
+    left: -250px;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    padding-left: 30px;
+    outline: none;
+    font-family: 'Hurme';
+    font-weight: 700;
+}
+
+.skip-nav:focus{
+    left: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.menu, .social-links {
+    display: flex;
+    gap: 1rem;
+    align-content: space-evenly;
+    list-style: none;
+    text-transform: lowercase;
+}
+
+.menu {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+em {
+    font-style: normal;
+    font-feature-settings: 'c2sc', 'smcp';
+    letter-spacing: 0.05em;
+}
+
+footer {
+    writing-mode: vertical-rl;
+    font-size: 0.75em;
+    transform: rotate(180deg);
+}
+
+/** Home Page **/
+
+.hang-punct{
+    text-indent: -0.41em;
+}
+
+.lara-quote {
+    margin-top: 12px;
+}
+
+.profile-photo {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.about-me-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.social-links {
+    grid-column: 2;
+}
+
+/** Acessibility adjustments (media queries) **/
+
+@media only screen and (prefers-reduced-motion: no-preference){
+    .skip-nav{
+        transition-property: left, background-color, box-shadow;
+        transition-duration: 180ms;
+    }
+
+    .skip-nav:focus{
+        transition-property: left;
+        transition-duration: 180ms;
+    }
+}
+
+/** Responsiveness Adjustments **/
+
+@media only screen and (max-width: 660px){
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1::after {
+        border: none;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    .body-layout{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
