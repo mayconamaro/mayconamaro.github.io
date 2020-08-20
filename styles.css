@@ -2,6 +2,18 @@
     Feel free to inspire yourself and copy anything
     on my design, just give me the credits =) **/
 
+:root {
+    --text-color: #242833;
+    --selection-background-color: #ffd6abfd;
+    --transparent-background-color: #ffd6ab8c;
+    --title-decoration-color: #ffae7d;
+    --dot-margin-color: #242833;
+    --link-color: #536ba2;
+    --alt-link-color: #2e3b6e;
+    --link-selection-color: #bdc7dcfd;
+    --fst-heading-color: black;
+}
+
 /** Resets **/
 
 * {
@@ -33,6 +45,7 @@
 
 body {
     font-size: 18px;
+    color: var(--text-color);
 }
 
 .body-layout {
@@ -53,11 +66,12 @@ h1, h2 {
 h1 { 
     font-size: 3.052em;
     display: inline-block;
+    color: var(--fst-heading-color);
 }
 
 h1::after{
     content: "";
-    border-bottom: solid 15px #fee072;
+    border-bottom: solid 15px var(--title-decoration-color);
     position: relative;
     bottom: 30px;
     display: block;
@@ -84,27 +98,32 @@ em, .menu, .social-links {
     width: 100%;
     padding: 30px 10px;
     padding-left: 40px;
-    border-left: 3px dotted black;
+    border-left: 3px dotted var(--dot-margin-color);
 }
 
 ::selection {
-    background-color: #fee07267;
+    background-color: var(--selection-background-color);
     color: black;
 }
 
+img::selection{
+    background-color: var(--transparent-background-color);
+}
+
 a::selection{
-    background-color: #A492F267;
+    background-color: var(--link-selection-color);
+    text-decoration: none;
 }
 
 a, a:visited {
-    color: #4825E4;
+    color: var(--link-color);
 }
 
 a:focus {
-    background-color: #4825e4;
+    background-color: var(--alt-link-color);
     color: white;
     text-decoration: none;
-    box-shadow: 0 0 0 3px #4825E4;
+    box-shadow: 0 0 0 3px var(--alt-link-color);
     outline: none;
 }
 
