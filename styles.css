@@ -12,6 +12,8 @@
     --alt-link-color: #2e3b6e;
     --link-selection-color: #bdc7dcfd;
     --fst-heading-color: black;
+    --abbr-symbol-color: #ff7076;
+    --abbr-focus-color: #fdd1d3;
 }
 
 /** Resets **/
@@ -26,20 +28,26 @@
 
 /* Hurme No 4 — Obtained in FreeFonts.io */
 
-@font-face{
+@font-face {
     font-family: 'Hurme';
     src: url('fonts/Hurmes/HurmeGeometricSans4\ Bold.otf') format("opentype");
     font-style: normal;
     font-weight: 700;
 }
 
-@font-face{
+@font-face {
     font-family: 'Hurme';
     src: url('fonts/Hurmes/HurmeGeometricSans4.otf') format("opentype");
     font-style: normal;
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'Hurme';
+    src: url('fonts/Hurmes/HurmeGeometricSans4\ SemiBold.otf') format("opentype");
+    font-style: normal;
+    font-weight: 600;
+}
 
 /** Common Properties **/
 
@@ -58,7 +66,7 @@ body {
     margin: 30px auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Hurme';
     font-weight: 700;
 }
@@ -69,7 +77,7 @@ h1 {
     color: var(--fst-heading-color);
 }
 
-h1::after{
+h1::after {
     content: "";
     border-bottom: solid 15px var(--title-decoration-color);
     position: relative;
@@ -106,11 +114,11 @@ em, .menu, .social-links {
     color: black;
 }
 
-img::selection{
+img::selection {
     background-color: var(--transparent-background-color);
 }
 
-a::selection{
+a::selection {
     background-color: var(--link-selection-color);
     text-decoration: none;
 }
@@ -138,7 +146,7 @@ a:focus {
     font-weight: 700;
 }
 
-.skip-nav:focus{
+.skip-nav:focus {
     left: 0;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -168,9 +176,10 @@ footer {
     transform: rotate(180deg);
 }
 
+
 /** Home Page **/
 
-.hang-punct{
+.hang-punct {
     text-indent: -0.41em;
 }
 
@@ -194,9 +203,76 @@ footer {
     grid-column: 2;
 }
 
+/** Portfolio Page **/
+
+.projects-list {
+    margin-top: 15px;
+    max-width: 700px;
+}
+
+.projects-list > li {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 200px 1fr;
+    margin-bottom: 15px;
+}
+
+.projects-list > li > h3 {
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+abbr {
+    text-decoration: none;
+    cursor: default;
+}
+
+abbr::before{
+    content: "o";
+    font-family: 'Hurme';
+    font-feature-settings: 'ordn';
+    font-size: 1.1em;
+    color: var(--abbr-symbol-color);
+}
+
+abbr:focus{
+    background-color: var(--abbr-focus-color);
+    outline: none;
+}
+
+abbr[title] {
+    position: relative;
+}
+
+abbr[title]:focus::after {
+  content: attr(title);
+  
+  /* position tooltip like the native one */
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: auto;
+  white-space: nowrap;
+  
+  /* style tooltip */
+  background-color: var(--text-color);
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-size: 0.8em;
+  padding: 3px 5px;
+}
+
+
 /** Acessibility adjustments (media queries) **/
 
 @media only screen and (prefers-reduced-motion: no-preference){
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
     .skip-nav{
         transition-property: left, background-color, box-shadow;
         transition-duration: 180ms;
@@ -207,6 +283,7 @@ footer {
         transition-duration: 180ms;
     }
 }
+
 
 /** Responsiveness Adjustments **/
 
@@ -232,5 +309,19 @@ footer {
     .body-layout{
         flex-direction: column;
         gap: 20px;
+    }
+
+    .projects-list > li {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .projects-list > li > h3 {
+        text-align: left;
+    }
+
+    abbr[title]:focus::after {
+        white-space: normal;
     }
 }
