@@ -67,7 +67,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Hurme';
+    font-family: 'Hurme', sans-serif;
     font-weight: 700;
 }
 
@@ -92,12 +92,12 @@ h2 {
 }
 
 p {
-    font-family: 'Source Serif Pro';
+    font-family: 'Source Serif Pro', serif;
     line-height: 1.5;
 }
 
 em, .menu, .social-links {
-    font-family: 'Hurme';
+    font-family: 'Hurme', sans-serif;
     font-size: 1.1em;
 }
 
@@ -142,7 +142,7 @@ a:focus {
     padding: 10px 20px;
     padding-left: 30px;
     outline: none;
-    font-family: 'Hurme';
+    font-family: 'Hurme', sans-serif;
     font-weight: 700;
 }
 
@@ -264,6 +264,14 @@ abbr[title]:focus::after {
   padding: 3px 5px;
 }
 
+/** Tutoring Page **/
+.files-list{
+
+    margin-top: 0.5em;
+    list-style-type: none;
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.8;
+}
 
 /** Acessibility adjustments (media queries) **/
 
@@ -271,16 +279,6 @@ abbr[title]:focus::after {
     
     html {
         scroll-behavior: smooth;
-    }
-    
-    .skip-nav{
-        transition-property: left, background-color, box-shadow;
-        transition-duration: 180ms;
-    }
-
-    .skip-nav:focus{
-        transition-property: left;
-        transition-duration: 180ms;
     }
 }
 
