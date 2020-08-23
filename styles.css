@@ -322,4 +322,9 @@ abbr[title]:focus::after {
     abbr[title]:focus::after {
         white-space: normal;
     }
+
+    .files-list{
+        list-style-position: outside;
+        list-style-type: disc;
+    }
 }
