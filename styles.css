@@ -223,47 +223,6 @@ footer {
     font-weight: 600;
 }
 
-abbr {
-    text-decoration: none;
-    cursor: default;
-}
-
-abbr::before{
-    content: "o";
-    font-family: 'Hurme';
-    font-feature-settings: 'ordn';
-    font-size: 1.1em;
-    color: var(--abbr-symbol-color);
-}
-
-abbr:focus{
-    background-color: var(--abbr-focus-color);
-    outline: none;
-}
-
-abbr[title] {
-    position: relative;
-}
-
-abbr[title]:focus::after {
-  content: attr(title);
-  
-  /* position tooltip like the native one */
-  position: absolute;
-  left: 0;
-  bottom: -30px;
-  width: auto;
-  white-space: nowrap;
-  
-  /* style tooltip */
-  background-color: var(--text-color);
-  color: #fff;
-  border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  font-size: 0.8em;
-  padding: 3px 5px;
-}
-
 /** Tutoring Page **/
 .files-list{
 
