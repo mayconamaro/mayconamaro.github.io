@@ -59,7 +59,7 @@ body {
 .body-layout {
     display: flex;
     flex-direction: row-reverse;
-    gap: 8px;
+ /* gap: 8px; Won’t work in Safari, see footer margin */
     width: 98%;
     max-width: 900px;
     align-items: center;
@@ -153,15 +153,18 @@ a:focus {
 
 .menu, .social-links {
     display: flex;
-    gap: 1rem;
     align-content: space-evenly;
     list-style: none;
     text-transform: lowercase;
+    line-height: 1.7;
+}
+
+.menu > li, .social-links > li {
+    margin-right: 15px;
 }
 
 .menu {
-    margin-top: 20px;
-    margin-bottom: 35px;
+    margin: 16pt 0;
 }
 
 em {
@@ -174,6 +177,7 @@ footer {
     writing-mode: vertical-rl;
     font-size: 0.75em;
     transform: rotate(180deg);
+    margin: 0 8px 0 0;
 }
 
 
@@ -196,6 +200,7 @@ footer {
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: 1.5rem;
+    row-gap: 0;
     width: 100%;
 }
 
@@ -247,7 +252,12 @@ footer {
 @media only screen and (max-width: 660px){
     .about-me-container {
         display: flex;
+        gap: 0;
         flex-direction: column;
+    }
+
+    .profile-photo {
+        margin-bottom: 1.5rem;
     }
 
     h1::after {
@@ -256,16 +266,18 @@ footer {
 
     .social-links {
         flex-wrap: wrap;
+        margin-top: 1.5rem;
     }
 
     footer {
         writing-mode: horizontal-tb;
         transform: none;
+        margin: 16px 0 0 0;
     }
 
     .body-layout{
         flex-direction: column;
-        gap: 20px;
+     /* gap: 20px; Won‘t work in Safari */
     }
 
     .projects-list > li {
