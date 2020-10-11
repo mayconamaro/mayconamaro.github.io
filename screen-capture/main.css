@@ -1,0 +1,30 @@
+#video {
+    border: 1px solid #999;
+    width: 98%;
+    max-width: 860px;
+  }
+
+  h1 {
+    font-size: 2.369em;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 60ch;
+    margin-top: 0;
+  }
+
+  .btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .btn-container-2{
+    align-self: center;
+    display: flex;
+  }
+
+  .btn-container-2 button {
+    margin-right: 2rem;
+  }
