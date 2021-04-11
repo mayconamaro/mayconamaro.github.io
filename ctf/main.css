@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Serif Pro", serif;
+}
+
+.page-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.youtube{
+    margin-top: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:  "Source Sans Pro", sans-serif;
+}
+
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3.052rem;
+}
+
+p {
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.45;
+    max-width: 80ch;
+}
