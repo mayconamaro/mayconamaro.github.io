@@ -211,7 +211,7 @@
         "id": "BCC323",
         "title": "Engenharia de Software II",
         "credits": 60,
-        "requires": [],
+        "requires": ["BCC322"],
         "quarter": 5,
         "isCompleted": false
     },
@@ -243,7 +243,7 @@
         "id": "BCC326",
         "title": "Processamento de Imagens",
         "credits": 60,
-        "requires": [],
+        "requires": ["BCC202"],
         "quarter": 6,
         "isCompleted": false
     },
@@ -267,7 +267,7 @@
         "id": "BCC342",
         "title": "Introdução à Otimização",
         "credits": 60,
-        "requires": ["BCC201"],
+        "requires": ["BCC202"],
         "quarter": 6,
         "isCompleted": false
     },
