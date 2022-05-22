@@ -4,11 +4,21 @@ const curriculumContainer = document.getElementById('curriculum');
 const currentYear = document.getElementById('current-year');
 const date = new Date();
 currentYear.innerHTML = date.getFullYear();
+const selector = document.getElementById('course-select');
+var actualCourse = selector.value;
 
-function loadJSON(callback) {
+selector.addEventListener("change", () => {
+    actualCourse = selector.value;
+    loadJSON(response => {
+        courses = JSON.parse(response);
+    }, actualCourse);
+    createGrid();
+});
+
+function loadJSON(callback, actualCourse) {
     const xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', './courses/decom.json', false);
+    xobj.open('GET', './courses/'+ actualCourse + '.json', false);
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
@@ -167,9 +177,11 @@ const setCourseStatus = (id) => {
 
 }
 
+
+
 loadJSON(response => {
     courses = JSON.parse(response);
-});
+}, actualCourse);
 
 
 createGrid();
