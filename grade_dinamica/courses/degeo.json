@@ -226,7 +226,7 @@
     {
         "id": "QUI117",
         "title": "Físico-Química",
-        "credits": 30,
+        "credits": 90,
         "requires": ["QUI200"],
         "quarter": 4,
         "isCompleted": false
