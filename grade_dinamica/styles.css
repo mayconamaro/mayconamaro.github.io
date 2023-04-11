@@ -45,7 +45,8 @@ h1 {
 }
 
 .navbar {
-    width: 1200px;
+    max-width: 1300px;
+    width: 90%;
     margin: auto;
     /* color: white; */
 }
@@ -88,10 +89,12 @@ h1 {
 }
 
 .curriculum {
-    width: 1024px;
+    overflow: auto;
+    width: 90%;
+    max-width: 1300px;
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: start;
     margin: 2em auto;
 }
 
@@ -190,6 +193,8 @@ h1 {
     width: 100%;
     background-color: black;
     padding: 2em 0;
+    display: grid;
+    place-items: center;
 }
 
 .footer p, .footer p a{
