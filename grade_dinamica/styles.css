@@ -80,12 +80,17 @@ h1 {
 .nav-container-right {
     display: flex;
     justify-content: space-around;
-    width: 500px;
+    max-width: 500px;
     padding-top: 25px;
 }
 
+.fab {
+    padding-left: 10px;
+}
+
 .logo {
-    width: 120px;
+    max-width: 120px;
+    min-width: 80px;
 }
 
 .curriculum {
@@ -111,7 +116,7 @@ h1 {
 }
 
 .instructions {
-    width: 1024px;
+    max-width: 1024px;
     margin: auto;
     color: black;
     padding: 1em 0;
@@ -139,6 +144,8 @@ h1 {
 
 .course {
     width: 100%;
+    min-width: 100px;
+    max-width: 120px;
     height: 110px;
     border-radius: 10px;
     display: flex;
@@ -209,24 +216,43 @@ h1 {
     font-size: 24px;
 }
 
-@media only screen and (min-width: 570px) and (max-width: 899px){
+@media only screen /*and (min-width: 570px)*/ and (max-width: 899px){
     header{
-        height: 150px;
+        min-height: 150px;
+    }
+
+    .navbar-items {
+        flex-direction: column;
+    }
+
+    .instructions {
+        padding-left: 5%;
+        width: 100%;
     }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 569px) {
+
+@media only screen and /* (min-width: 375px) and*/ (max-width: 569px) {
     
-    header {
+    .nav-container-right {
+        flex-direction: column;
+        min-height: 150px;
+    }
+
+    .instructions {
+        font-size: 16px;
+    }
+
+    /* header {
         height: 170px;
 
     }
 
     .instructions {
         height: 70px;
-    }
+    } */
 }
-
+/*
 @media only screen and (max-width: 374px) {
     header {
         height: 170px;
@@ -241,3 +267,4 @@ h1 {
         font-size: 16px;
     }
 }
+*/
