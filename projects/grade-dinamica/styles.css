@@ -1,13 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto&display=swap');
-/* trocar p roboto e nunito sans */
-
+/** Welcome to My Personal Page's Stylesheet
+    Feel free to inspire yourself and copy anything
+    on my design, just give me the credits =) **/
 
 :root {
+    --text-color: #242833;
+    --selection-background-color: #ffd6abfd;
+    --transparent-background-color: #ffd6ab8c;
+    --title-decoration-color: #ffae7d;
+    --dot-margin-color: #242833;
+    --link-color: #3F4F78;
+    --alt-link-color: #2e3b6e;
+    --link-selection-color: #bdc7dcfd;
+    --fst-heading-color: black;
+    --abbr-symbol-color: #FF5C64;
+    --abbr-focus-color: #fdd1d3;
+
     --heading-color: #fff;
     --nav-bg-color: #4897d8;
-    --box-blocked-color: #ff9e8b;
-    --box-available-color: #6892e6;
-    --box-completed-color: #59e2d8;
+    --box-blocked-color: #FFCCC2;
+    --box-available-color: #B8CCF4;
+    --box-completed-color: #A8F0EB;
     --box-font-color: #fff;
     --instructions-bg-color: #f8a055;
     --credit-info-border-color: #f8a055;
@@ -17,85 +29,282 @@
     --font-color: #333333;
     
     --light-pink: #FFE0E0;
-
-    --cursive-font: 'Nunito Sans'; 
-    --sans-serif-font: 'Roboto';
 }
+
+/** Resets **/
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--sans-serif-font), sans-serif;
+}
+
+/** Local Fonts **/
+
+/* Hurme No 4 — Obtained in FreeFonts.io */
+
+@font-face {
+    font-family: 'Hurme';
+    src: url('/assets/fonts/Hurmes/HurmeGeometricSans4\ Bold.otf') format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Hurme';
+    src: url('/assets/fonts/Hurmes/HurmeGeometricSans4.otf') format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Hurme';
+    src: url('/assets/fonts/Hurmes/HurmeGeometricSans4\ SemiBold.otf') format("opentype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+/** Common Properties **/
+
+body {
     font-size: 18px;
+    color: var(--text-color);
 }
 
- header {
-    /* background-color: black; */
-    padding: 2em 0;
-} 
-
-h1 {
-    font-size: 32px;
-    text-align: left;
-    padding-top: 27px;
-    font-family: var(--cursive-font), cursive;
-    color: var(--font-color);
-    text-transform: uppercase;
-}
-
-.navbar {
-    max-width: 1300px;
-    width: 90%;
-    margin: auto;
-    /* color: white; */
-}
-
-.navbar .navbar-items {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.body-layout {
     display: flex;
-    justify-content: space-around; 
+    flex-direction: row-reverse;
+ /* gap: 8px; Won’t work in Safari, see footer margin */
+    width: 98%;
+    max-width: 900px;
+    align-items: center;
+    margin: 30px auto;
 }
 
-.navbar .navbar-items a {
+.body-layout.grade-dinamica {
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 10px auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Hurme', sans-serif;
+    font-weight: 700;
+}
+
+h1 { 
+    font-size: 3.052em;
+    display: inline-block;
+    color: var(--fst-heading-color);
+}
+
+h1::after {
+    content: "";
+    border-bottom: solid 15px var(--title-decoration-color);
+    position: relative;
+    bottom: 30px;
+    display: block;
+    z-index: -1;
+}
+
+h2 {
+    font-size: 2.441em;
+    margin-top: 0.6em;
+}
+
+p {
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.5;
+}
+
+em, .menu, .social-links {
+    font-family: 'Hurme', sans-serif;
+    font-size: 1.1em;
+}
+
+.page-container {
+    max-width: 900px;
+    width: 100%;
+    padding: 30px 10px;
+    padding-left: 40px;
+    border-left: 3px dotted var(--dot-margin-color);
+}
+
+.page-container.grade-dinamica {
+    border-left: none;
+    border-bottom: 3px dotted var(--dot-margin-color);
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    max-width: 1300px;
+}
+
+::selection {
+    background-color: var(--selection-background-color);
     color: black;
 }
-.navbar .navbar-items .navbar-select {
-    -webkit-appearance: none;
-    -webkit-border-radius: 10px;
-    appearance: none;
-    border-radius: 10px;
-    border-color: black;
-    padding: .5em;
-    background-color: black;
+
+img::selection {
+    background-color: var(--transparent-background-color);
+}
+
+a::selection {
+    background-color: var(--link-selection-color);
+    text-decoration: none;
+}
+
+a, a:visited {
+    color: var(--link-color);
+}
+
+a:focus {
+    background-color: var(--alt-link-color);
     color: white;
+    text-decoration: none;
+    box-shadow: 0 0 0 3px var(--alt-link-color);
+    outline: none;
 }
 
-.navbar-select {
-    border: none;
+.skip-nav {
+    position: absolute;
+    left: -250px;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    padding-left: 30px;
+    outline: none;
+    font-family: 'Hurme', sans-serif;
+    font-weight: 700;
 }
 
-.nav-container-right {
+.skip-nav:focus {
+    left: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.menu, .social-links {
     display: flex;
-    justify-content: space-around;
-    max-width: 500px;
-    padding-top: 25px;
+    align-content: space-evenly;
+    list-style: none;
+    text-transform: lowercase;
+    line-height: 1.7;
 }
 
-.fab {
-    padding-left: 10px;
+.menu > li, .social-links > li {
+    margin-right: 15px;
 }
 
-.logo {
-    max-width: 120px;
-    min-width: 80px;
+.menu {
+    margin: 16pt 0;
+}
+
+em {
+    font-style: normal;
+    font-feature-settings: 'c2sc', 'smcp';
+    letter-spacing: 0.05em;
+}
+
+footer {
+    writing-mode: vertical-rl;
+    font-size: 0.75em;
+    transform: rotate(180deg);
+    margin: 0 8px 0 0;
+}
+
+footer.grade-dinamica {
+    writing-mode: horizontal-tb;
+    transform: rotate(0);
+}
+
+/** Home Page **/
+
+.hang-punct {
+    text-indent: -0.41em;
+}
+
+.lara-quote {
+    margin-top: 12px;
+}
+
+.profile-photo {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.about-me-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+    row-gap: 0;
+    width: 100%;
+}
+
+.social-links {
+    grid-column: 2;
+}
+
+/** Portfolio Page **/
+
+.projects-list {
+    margin-top: 15px;
+    max-width: 700px;
+}
+
+.projects-list > li {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 200px 1fr;
+    margin-bottom: 15px;
+}
+
+.projects-list > li > h2 {
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+/** Tutoring Page **/
+.files-list{
+
+    margin-top: 0.5em;
+    list-style-type: none;
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.8;
+}
+
+/** Grade Dinamica **/
+select {
+    border: none;
+    padding: 0.33em;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1em;
+    background-color: var(--transparent-background-color);
+}
+
+.course-select {
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.7;
+}
+
+p.credits {
+    line-height: 1.7;
+    vertical-align: middle;
+}
+
+.navbar-select-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    align-items: center;
+}
+
+.navbar-select-group .menu {
+    margin: 0;
 }
 
 .curriculum {
     overflow: auto;
-    width: 90%;
+    width: 100%;
     max-width: 1300px;
     display: flex;
     flex-flow: row;
@@ -103,27 +312,26 @@ h1 {
     margin: 2em auto;
 }
 
+.curriculum p {
+    font-family: 'Source Sans 3', serif;
+}
+
+.curriculum h2 {
+    font-size: 0.74em;
+    font-weight: normal;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
 .curriculum-column {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    padding-left: 1em;
+    padding-left: 0.5em;
 
 }
 
 .curriculum-column:first-of-type{
     padding-left: 0;
-}
-
-.instructions {
-    max-width: 1024px;
-    margin: auto;
-    color: black;
-    padding: 1em 0;
-}
-
-.instructions p {
-    font-size: 20px;
 }
 
 .credit-info {
@@ -145,19 +353,21 @@ h1 {
 .course {
     width: 100%;
     min-width: 100px;
-    max-width: 120px;
+    max-width: 130px;
     height: 110px;
-    border-radius: 10px;
+    border-radius: 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     margin-bottom: 1em;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: 5px;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 .course:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 8px 8px rgba(0,0,0,0.19);
 }
 
 .course.blocked {
@@ -176,95 +386,102 @@ h1 {
 }
 
 .course-title, .course-credits, .course-code {
-    font-size: 12px;
+    font-size: 0.8rem;
     text-align: center;
 }
 
 .course-code {
     /* background-color: white; */
-    margin: 0 1em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
 }
 
 .course-title {
-    padding: 0 10px;
+    padding: 0 5px;
     color: black;
+    max-height: 50px;
+}
+
+.course-title.small {
+    font-size: 0.6em;
 }
 
 .course-credits {
     background-color: white;
-    color: var(--font-color);
+    color: var(--text-color);
     margin: 0 2em;
 }
 
-.footer {
-    width: 100%;
-    background-color: black;
-    padding: 2em 0;
-    display: grid;
-    place-items: center;
+header.grade-dinamica {
+    max-width: 900px;
+    margin: auto;
 }
 
-.footer p, .footer p a{
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    font-family: var(--cursive-font);
+p.justify {
+    text-align: justify;
+    hyphens: auto;
 }
 
-.heart {
-    color: var(--light-pink);
-    font-size: 24px;
-}
+/** Acessibility adjustments (media queries) **/
 
-@media only screen /*and (min-width: 570px)*/ and (max-width: 899px){
-    header{
-        min-height: 150px;
-    }
-
-    .navbar-items {
-        flex-direction: column;
-    }
-
-    .instructions {
-        padding-left: 5%;
-        width: 100%;
-    }
-}
-
-
-@media only screen and /* (min-width: 375px) and*/ (max-width: 569px) {
+@media only screen and (prefers-reduced-motion: no-preference){
     
-    .nav-container-right {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+
+/** Responsiveness Adjustments **/
+
+@media only screen and (max-width: 660px){
+    .about-me-container {
+        display: flex;
+        gap: 0;
         flex-direction: column;
-        min-height: 150px;
     }
 
-    .instructions {
-        font-size: 16px;
+    .profile-photo {
+        margin-bottom: 1.5rem;
     }
 
-    /* header {
-        height: 170px;
-
+    h1::after {
+        border: none;
     }
 
-    .instructions {
-        height: 70px;
-    } */
+    .social-links {
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+    }
+
+    footer {
+        writing-mode: horizontal-tb;
+        transform: none;
+        margin: 16px 0 0 0;
+    }
+
+    .body-layout{
+        flex-direction: column;
+     /* gap: 20px; Won‘t work in Safari */
+    }
+
+    .projects-list > li {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .projects-list > li > h3 {
+        text-align: left;
+    }
+
+    abbr[title]:focus::after {
+        white-space: normal;
+    }
+
+    .files-list{
+        list-style-position: outside;
+        list-style-type: disc;
+    }
 }
-/*
-@media only screen and (max-width: 374px) {
-    header {
-        height: 170px;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    .instructions {
-        height: 70px;
-        font-size: 16px;
-    }
-}
-*/

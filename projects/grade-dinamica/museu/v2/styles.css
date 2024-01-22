@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto&display=swap');
+/* trocar p roboto e nunito sans */
+
+
+:root {
+    --heading-color: #fff;
+    --nav-bg-color: #4897d8;
+    --box-blocked-color: #ff9e8b;
+    --box-available-color: #6892e6;
+    --box-completed-color: #59e2d8;
+    --box-font-color: #fff;
+    --instructions-bg-color: #f8a055;
+    --credit-info-border-color: #f8a055;
+
+    --primary-color: #f8a45e;
+    --light-color: #fac08e;
+    --font-color: #333333;
+    
+    --light-pink: #FFE0E0;
+
+    --cursive-font: 'Nunito Sans'; 
+    --sans-serif-font: 'Roboto';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--sans-serif-font), sans-serif;
+    font-size: 18px;
+}
+
+ header {
+    /* background-color: black; */
+    padding: 2em 0;
+} 
+
+h1 {
+    font-size: 32px;
+    text-align: left;
+    padding-top: 27px;
+    font-family: var(--cursive-font), cursive;
+    color: var(--font-color);
+    text-transform: uppercase;
+}
+
+.navbar {
+    max-width: 1300px;
+    width: 90%;
+    margin: auto;
+    /* color: white; */
+}
+
+.navbar .navbar-items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.navbar .navbar-items a {
+    color: black;
+}
+.navbar .navbar-items .navbar-select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 10px;
+    appearance: none;
+    border-radius: 10px;
+    border-color: black;
+    padding: .5em;
+    background-color: black;
+    color: white;
+}
+
+.navbar-select {
+    border: none;
+}
+
+.nav-container-right {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    padding-top: 25px;
+}
+
+.fab {
+    padding-left: 10px;
+}
+
+.logo {
+    max-width: 120px;
+    min-width: 80px;
+}
+
+.curriculum {
+    overflow: auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-flow: row;
+    justify-content: start;
+    margin: 2em auto;
+}
+
+.curriculum-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding-left: 1em;
+
+}
+
+.curriculum-column:first-of-type{
+    padding-left: 0;
+}
+
+.instructions {
+    max-width: 1024px;
+    margin: auto;
+    color: black;
+    padding: 1em 0;
+}
+
+.instructions p {
+    font-size: 20px;
+}
+
+.credit-info {
+    width: fit-content;
+    display: flex;
+    padding: .5em;
+    margin-top: 2em;
+}
+
+.credit-info-text {
+    text-align: center;
+}
+
+.credit-info-text #credit-sum {
+    background-color: white;
+    padding: 0 .5em;
+}
+
+.course {
+    width: 100%;
+    min-width: 100px;
+    max-width: 120px;
+    height: 110px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.course:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.course.blocked {
+    cursor: not-allowed;
+    background-color: var(--box-blocked-color);
+}
+
+.course.available {
+    cursor: pointer;
+    background-color: var(--box-available-color);
+}
+
+.course.completed {
+    cursor: pointer;
+    background-color: var(--box-completed-color);
+}
+
+.course-title, .course-credits, .course-code {
+    font-size: 12px;
+    text-align: center;
+}
+
+.course-code {
+    /* background-color: white; */
+    margin: 0 1em;
+}
+
+.course-title {
+    padding: 0 10px;
+    color: black;
+}
+
+.course-credits {
+    background-color: white;
+    color: var(--font-color);
+    margin: 0 2em;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    padding: 2em 0;
+    display: grid;
+    place-items: center;
+}
+
+.footer p, .footer p a{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-family: var(--cursive-font);
+}
+
+.heart {
+    color: var(--light-pink);
+    font-size: 24px;
+}
+
+@media only screen /*and (min-width: 570px)*/ and (max-width: 899px){
+    header{
+        min-height: 150px;
+    }
+
+    .navbar-items {
+        flex-direction: column;
+    }
+
+    .instructions {
+        padding-left: 5%;
+        width: 100%;
+    }
+}
+
+
+@media only screen and /* (min-width: 375px) and*/ (max-width: 569px) {
+    
+    .nav-container-right {
+        flex-direction: column;
+        min-height: 150px;
+    }
+
+    .instructions {
+        font-size: 16px;
+    }
+
+    /* header {
+        height: 170px;
+
+    }
+
+    .instructions {
+        height: 70px;
+    } */
+}
+/*
+@media only screen and (max-width: 374px) {
+    header {
+        height: 170px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .instructions {
+        height: 70px;
+        font-size: 16px;
+    }
+}
+*/

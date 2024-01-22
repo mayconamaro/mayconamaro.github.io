@@ -1,0 +1,458 @@
+ [
+    {
+        "id": "ARQ700",
+        "title": "Expressão Gráfica",
+        "credits": 60,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC701",
+        "title": "Programação de Computadores I",
+        "credits": 60,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM700",
+        "title": "Cálculo Diferencial e Integral A",
+        "credits": 60,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM730",
+        "title": "Geometria Analítica e Álgebra Linear",
+        "credits": 60,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "URB100",
+        "title": "Seminários de Introdução à Engenharia Urbana",
+        "credits": 30,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "URB121",
+        "title": "Sistemas Urbanos",
+        "credits": 60,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "ARQ225",
+        "title": "Teorias da Cidade",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS106",
+        "title": "Fundamentos de Mecânica",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM702",
+        "title": "Cálculo Diferencial e Integral B",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "PRO731",
+        "title": "Sociologia e Administração Urbana",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "QUI701",
+        "title": "Química Fundamental",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS105",
+        "title": "Fundamentos de Física Experimental",
+        "credits": 30,
+        "requires": [],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS107",
+        "title": "Fundamentos de Termodinâmica",
+        "credits": 30,
+        "requires": [],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM703",
+        "title": "Cálculo Diferencial e Integral C",
+        "credits": 60,
+        "requires": [],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "PRO634",
+        "title": "Economia Regional e Urbana",
+        "credits": 60,
+        "requires": [],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "URB117",
+        "title": "Ecologia Urbana",
+        "credits": 60,
+        "requires": [],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "URB119",
+        "title": "Métodos Estocásticos em Engenharia Urbana I",
+        "credits": 60,
+        "requires": [],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "ARQ240",
+        "title": "Topografia",
+        "credits": 60,
+        "requires": ["ARQ700", "BCC701", "MTM700", "MTM730", "URB100", "URB121"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT185",
+        "title": "Eletrodinâmica",
+        "credits": 60,
+        "requires": ["ARQ700", "BCC701", "MTM700", "MTM730", "URB100", "URB121"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "URB101",
+        "title": "Instrumentos de Política Urbana",
+        "credits": 30,
+        "requires": ["ARQ700", "BCC701", "MTM700", "MTM730", "URB100", "URB121"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "URB120",
+        "title": "Métodos Estocásticos em Engenharia Urbana II",
+        "credits": 60,
+        "requires": ["ARQ700", "BCC701", "MTM700", "MTM730", "URB100", "URB119", "URB121"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+     {
+        "id": "URB124",
+        "title": "Mecânica dos Fluídos Aplicada",
+        "credits": 60,
+        "requires": ["ARQ700", "BCC701", "FIS105", "FIS107", "MTM700", "MTM730", "URB100", "URB121"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+     {
+        "id": "URB125",
+        "title": "Metodologia Científica Aplicada",
+        "credits": 30,
+        "requires": ["ARQ700", "BCC701", "MTM700", "MTM730", "URB100", "URB121"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+     {
+        "id": "CIV610",
+        "title": "Resistência dos Materiais",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS106", "MTM700", "MTM702", "MTM730", "PRO731", "QUI701", "URB100", "URB121"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "URB126",
+        "title": "Métodos Computacionais em Engenharia",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS106", "MTM700", "MTM702", "MTM703", "MTM730", "PRO731", "QUI701", "URB100", "URB121"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "URB202",
+        "title": "Geotecnia I - Mecânica dos Solos",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS106", "MTM700", "MTM702", "MTM730", "PRO731", "QUI701", "URB100", "URB121"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "URB226",
+        "title": "Geologia Urbana",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS106", "MTM700", "MTM702", "MTM730", "PRO731", "QUI701", "URB100", "URB121"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "URB227",
+        "title": "Hidráulica Aplicada",
+        "credits": 75,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS106", "MTM700", "MTM702", "MTM730", "PRO731", "QUI701", "URB100", "URB121", "URB124"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "CIV600",
+        "title": "Materiais de Construção",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB117", "URB119",  "URB121"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "URB103",
+        "title": "Geoprocessamento em Ambientes Urbanos",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB117", "URB119",  "URB121"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "URB104",
+        "title": "Projeto Urbanístico I - Parcelamento de Solo Urbano",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB117", "URB119",  "URB121"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "URB105",
+        "title": "Geotecnia II - Mecânica dos Solos",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB117", "URB119",  "URB121", "URB202"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "URB106",
+        "title": "Hidrologia Urbana",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB117", "URB119",  "URB120", "URB121"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "URB127",
+        "title": "Análise de Sistemas de Transportes",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB117", "URB119",  "URB121"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "URB107",
+        "title": "Planejamento, Licitação e Controle de Obras Públicas",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB117", "URB119", "URB120", "URB121", "URB124"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "URB108",
+        "title": "Geotecnia III - Mecânica das Rochas",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB117", "URB119", "URB120", "URB121", "URB124"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "URB109",
+        "title": "Planejamento de Transportes Urbanos",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB117", "URB119", "URB120", "URB121", "URB124", "URB127"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "URB114",
+        "title": "Sistemas de Abastecimento de Água",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB117", "URB119", "URB120", "URB121", "URB124", "URB227"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "URB115",
+        "title": "Drenagem Urbana",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB106", "URB117", "URB119", "URB120", "URB121", "URB124", "URB227"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "URB116",
+        "title": "Projeto Integrado de Engenharia Urbana I",
+        "credits": 30,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB104", "URB105", "URB106", "URB117", "URB119", "URB120", "URB121", "URB124", "URB127", "URB226"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "ARQ106",
+        "title": "Projeto Urbanístico II - Intervenções em Áreas Consolidadas",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB104", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB202", "URB226", "URB227"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "URB128",
+        "title": "Projeto Integrado de Engenharia Urbana II",
+        "credits": 30,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB116", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB202", "URB226", "URB227"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "URB129",
+        "title": "Projeto de Vias Urbanas",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB109", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB202", "URB226", "URB227"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "ARQ130",
+        "title": "Sistemas de Esgotamento Sanitário",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB114", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB202", "URB226", "URB227"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "URB134",
+        "title": "Gerenciamento de Resíduos Sólidos Urbanos",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB202", "URB226", "URB227"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "URB135",
+        "title": "Gestão da Qualidade de Obras Públicas",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ700", "BCC701", "CAT185", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB104", "URB107", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB202", "URB226", "URB227"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+     {
+        "id": "ARQ107",
+        "title": "Planejamento Urbano e Regional",
+        "credits": 60,
+        "requires": ["ARQ106", "ARQ225", "ARQ240", "ARQ700", "BCC701", "CAT185", "CIV600", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB103", "URB104", "URB105", "URB106", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB127", "URB202", "URB226", "URB227"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "URB136",
+        "title": "Projeto Final de Curso I",
+        "credits": 45,
+        "requires": ["ARQ225", "ARQ240", "ARQ700", "BCC701", "CAT185", "CIV600", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB103", "URB104", "URB105", "URB106", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB127", "URB202", "URB226", "URB227"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "URB137",
+        "title": "Gestão de Pavimentos",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ240", "ARQ700", "BCC701", "CAT185", "CIV600", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB103", "URB104", "URB105", "URB106", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB127", "URB129", "URB202", "URB226", "URB227"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "URB138",
+        "title": "Geotecnia em Áreas Urbanas",
+        "credits": 90,
+        "requires": ["ARQ225", "ARQ240", "ARQ700", "BCC701", "CAT185", "CIV600", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB103", "URB104", "URB105", "URB106", "URB108", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB127", "URB202", "URB226", "URB227"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "URB139",
+        "title": "Gestão de Riscos e de Desastres Urbanos",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ240", "ARQ700", "BCC701", "CAT185", "CIV600", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB103", "URB104", "URB105", "URB106", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB127", "URB202", "URB226", "URB227"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "URB141",
+        "title": "Hidrogeologia Aplicada",
+        "credits": 60,
+        "requires": ["ARQ225", "ARQ240", "ARQ700", "BCC701", "CAT185", "CIV600", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB103", "URB104", "URB105", "URB106", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB127", "URB202", "URB226", "URB227"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "URB142",
+        "title": "Estágio Supervisionado em Engenharia Urbana",
+        "credits": 30,
+        "requires": ["ARQ225", "ARQ240", "ARQ700", "BCC701", "CAT185", "CIV600", "CIV610", "FIS105", "FIS106", "FIS107", "MTM700", "MTM702", "MTM703", "MTM730", "PRO634", "PRO731", "QUI701", "URB100", "URB101", "URB103", "URB104", "URB105", "URB106", "URB107", "URB109", "URB114", "URB115", "URB116", "URB117", "URB119", "URB120", "URB121", "URB124", "URB126", "URB127", "URB202", "URB226", "URB227"],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "URB143",
+        "title": "Projeto Final de Curso II (Semipresencial)",
+        "credits": 30,
+        "requires": ["URB136"],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "elt01",
+        "title": "Eletiva 1",
+        "credits": 60,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "elt02",
+        "title": "Eletiva 2",
+        "credits": 60,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "elt03",
+        "title": "Eletiva 3",
+        "credits": 60,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    }
+ ]

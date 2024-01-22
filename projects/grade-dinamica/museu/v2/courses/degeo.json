@@ -1,0 +1,554 @@
+[
+    {
+        "id": "ARQ208",
+        "title": "Geometria Descritiva",
+        "credits": 90,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "EFD301",
+        "title": "Educação Física e Desportos I",
+        "credits": 30,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO151",
+        "title": "Geologia Geral",
+        "credits": 75,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM122",
+        "title": "Cálculo Diferencial e Integral I",
+        "credits": 90,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM131",
+        "title": "Geometria Analítica e Cálculo Vetorial",
+        "credits": 60,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "QUI200",
+        "title": "Química Geral",
+        "credits": 90,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "ARQ209",
+        "title": "Desenho Técnico",
+        "credits": 30,
+        "requires": ["ARQ208"],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC701",
+        "title": "Programação de Computadores I",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "EFD302",
+        "title": "Educação Física e Desportos II",
+        "credits": 30,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS106",
+        "title": "Fundamentos de Mecânica",
+        "credits": 60,
+        "requires": ["MTM122", "MTM131"],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO104",
+        "title": "Mineralogia",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO239",
+        "title": "Cristalografia",
+        "credits": 30,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM112",
+        "title": "Introdução à Álgebra Linear",
+        "credits": 60,
+        "requires": ["MTM131"],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM123",
+        "title": "Cálculo Diferencial e Integral II",
+        "credits": 60,
+        "requires": ["MTM122"],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "ARQ202",
+        "title": "Topografia A",
+        "credits": 45,
+        "requires": ["ARQ209"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS107",
+        "title": "Fundamentos de Termodinâmica",
+        "credits": 30,
+        "requires": ["FIS106", "MTM123"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS108",
+        "title": "Fundamentos de Fluídos, Oscilações e Ondas",
+        "credits": 30,
+        "requires": ["FIS106", "MTM123"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS109",
+        "title": "Fundamentos de Eletromagnetismo",
+        "credits": 60,
+        "requires": ["FIS106", "MTM123"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO152",
+        "title": "Petrografia Macroscópica",
+        "credits": 60,
+        "requires": ["GEO104", "GEO151", "QUI200"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM124",
+        "title": "Cálculo Diferencial e Integral III",
+        "credits": 60,
+        "requires": ["MTM123"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM125",
+        "title": "Introdução às Equações Diferenciais Ordinárias",
+        "credits": 60,
+        "requires": ["MTM112", "MTM122"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "QUI147",
+        "title": "Química Orgânica",
+        "credits": 30,
+        "requires": ["QUI200"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS105",
+        "title": "Fundamentos de Física Experimental",
+        "credits": 30,
+        "requires": ["FIS109", "MTM125"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS110",
+        "title": "Fundamentos de Óptica e Quântica",
+        "credits": 30,
+        "requires": ["FIS109", "MTM125"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS214",
+        "title": "Mecânica Racional",
+        "credits": 60,
+        "requires": ["FIS106", "MTM124", "MTM125"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO132",
+        "title": "Óptica Cristalina",
+        "credits": 75,
+        "requires": ["GEO104", "GEO239"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO147",
+        "title": "Paleontologia I",
+        "credits": 45,
+        "requires": ["GEO151"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO153",
+        "title": "Sedimentologia",
+        "credits": 90,
+        "requires": ["GEO104", "GEO151", "QUI200"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "QUI117",
+        "title": "Físico-Química",
+        "credits": 90,
+        "requires": ["QUI200"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC760",
+        "title": "Cálculo Numérico",
+        "credits": 60,
+        "requires": ["BCC701", "MTM124", "MTM125"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS215",
+        "title": "Mecânica do Contínuo",
+        "credits": 60,
+        "requires": ["FIS107", "FIS108", "FIS214"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO148",
+        "title": "Paleontologia II",
+        "credits": 45,
+        "requires": ["GEO147"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO154",
+        "title": "Desenho Geológico",
+        "credits": 60,
+        "requires": ["ARQ202", "ARQ208", "GEO152"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO155",
+        "title": "Estratigrafia",
+        "credits": 105,
+        "requires": ["GEO152", "GEO153"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO156",
+        "title": "Geomorfologia",
+        "credits": 75,
+        "requires": ["ARQ202", "GEO152"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO232",
+        "title": "Petrologia Magmática",
+        "credits": 60,
+        "requires": ["GEO132", "GEO152", "QUI117"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "EST202",
+        "title": "Estatística e Probabilidade",
+        "credits": 60,
+        "requires": ["MTM122"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO157",
+        "title": "Petrologia Metamórfica",
+        "credits": 90,
+        "requires": ["GEO232"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO158",
+        "title": "Geoquímica",
+        "credits": 105,
+        "requires": ["GEO232", "QUI117"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO159",
+        "title": "Geologia Estrutural",
+        "credits": 105,
+        "requires": ["GEO154", "GEO155"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO216",
+        "title": "Sensoriamento Remoto",
+        "credits": 75,
+        "requires": ["GEO154", "GEO155", "GEO156"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO270",
+        "title": "Técnicas Levantamentos Estratigráficos - Partes I/II",
+        "credits": 120,
+        "requires": ["GEO155"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "AMB110",
+        "title": "Engenharia Ambiental Básica",
+        "credits": 45,
+        "requires": [1800],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO142",
+        "title": "Cartografia Digital",
+        "credits": 30,
+        "requires": [],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO161",
+        "title": "Geofísica",
+        "credits": 120,
+        "requires": ["FIS105", "FIS110", "FIS214", "GEO159"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO229",
+        "title": "Petrologia Sedimentar",
+        "credits": 45,
+        "requires": ["GEO132", "GEO152", "GEO153"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO272",
+        "title": "Geologia de Campo",
+        "credits": 120,
+        "requires": ["GEO159", "GEO216"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO293",
+        "title": "Hidrogeologia",
+        "credits": 60,
+        "requires": ["GEO159"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO163",
+        "title": "Geologia Econômica",
+        "credits": 120,
+        "requires": ["GEO158", "GEO159"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO164",
+        "title": "Pedologia",
+        "credits": 75,
+        "requires": ["GEO156", "GEO158"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO167",
+        "title": "Geotectônica",
+        "credits": 90,
+        "requires": ["GEO158", "GEO159"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO297",
+        "title": "Geologia de Engenharia",
+        "credits": 60,
+        "requires": ["GEO272", "GEO293"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO393",
+        "title": "Estágio Supervisionado",
+        "credits": 160,
+        "requires": ["GEO132", "GEO154", "GEO155"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO493",
+        "title": "Mapeamento Geológico",
+        "credits": 120,
+        "requires": ["GEO157", "GEO270", "GEO272"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "PRO241",
+        "title": "Economia I",
+        "credits": 30,
+        "requires": [1650],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "PRO243",
+        "title": "Organização e Administração I",
+        "credits": 30,
+        "requires": [1650],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO143",
+        "title": "Geologia Histórica",
+        "credits": 45,
+        "requires": ["GEO167"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO165",
+        "title": "Geologia Ambiental",
+        "credits": 60,
+        "requires": ["AMB110", "GEO293"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO166",
+        "title": "Geologia do Brasil",
+        "credits": 75,
+        "requires": ["GEO167"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO299",
+        "title": "Pesquisa Mineral",
+        "credits": 75,
+        "requires": ["EST202", "GEO161", "GEO163"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "GEO367",
+        "title": "Recursos Energéticos",
+        "credits": 30,
+        "requires": ["GEO163"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "TCC401",
+        "title": "Trabalho de Conclusão de Curso I",
+        "credits": 30,
+        "requires": ["GEO163", "GEO164", "GEO493"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "DIR250",
+        "title": "Introdução ao Direito e Legislação",
+        "credits": 30,
+        "requires": [2400],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "MIN007",
+        "title": "Economia Mineral",
+        "credits": 30,
+        "requires": [2400],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "PRO242",
+        "title": "Economia II",
+        "credits": 30,
+        "requires": ["PRO241"],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "PRO244",
+        "title": "Organização e Administração II",
+        "credits": 30,
+        "requires": ["PRO243"],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "TCC402",
+        "title": "Trabalho de Conclusão de Curso II",
+        "credits": 180,
+        "requires": ["TCC401"],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "elt000",
+        "title": "Disciplinas Eletivas",
+        "credits": 90,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "ATV100",
+        "title": "Atividades Acadêmico Científico-Cultural",
+        "credits": 135,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    }
+]
