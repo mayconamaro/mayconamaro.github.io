@@ -1,0 +1,434 @@
+[
+    {
+        "id": "BCC701",
+        "title": "Programação de Computadores I",
+        "credits": 60,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "CSO117",
+        "title": "Metodologia de Pesquisa",
+        "credits": 30,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM122",
+        "title": "Cálculo Diferencial e Integral I",
+        "credits": 90,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM730",
+        "title": "Geometria Analítica e Álgebra Linear",
+        "credits": 60,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "QUI701",
+        "title": "Química Fundamental",
+        "credits": 60,
+        "requires": [],
+        "quarter": 1,
+        "isCompleted": false
+    },
+    {
+        "id": "ARQ205",
+        "title": "Representação Gráfica",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC702",
+        "title": "Programação de Computadores II",
+        "credits": 60,
+        "requires": ["BCC701"],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "EST202",
+        "title": "Estatística e Probabilidade",
+        "credits": 60,
+        "requires": [],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS106",
+        "title": "Fundamentos de Mecânica",
+        "credits": 60,
+        "requires": ["MTM122", "MTM730"],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM123",
+        "title": "Cálculo Diferencial e Integral II",
+        "credits": 60,
+        "requires": ["MTM122"],
+        "quarter": 2,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC760",
+        "title": "Cálculo Numérico",
+        "credits": 60,
+        "requires": [],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS107",
+        "title": "Fundamentos de Termodinâmica",
+        "credits": 30,
+        "requires": ["FIS106", "MTM123"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS108",
+        "title": "Fundamentos de Fluídos, Oscilações e Ondas",
+        "credits": 30,
+        "requires": ["FIS106", "MTM123"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS109",
+        "title": "Fundamentos de Eletromagnetismo",
+        "credits": 60,
+        "requires": ["FIS106", "MTM123"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM124",
+        "title": "Cálculo Diferencial e Integral III",
+        "credits": 60,
+        "requires": ["MTM123"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM125",
+        "title": "Introdução às Equações Diferenciais Ordinárias",
+        "credits": 60,
+        "requires": ["MTM123"],
+        "quarter": 3,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC720",
+        "title": "Sistemas de Computação para Controle e Automação",
+        "credits": 60,
+        "requires": ["BCC702"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT176",
+        "title": "Análise de Circuitos Elétricos",
+        "credits": 60,
+        "requires": [],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS105",
+        "title": "Fundamentos de Física Experimental",
+        "credits": 30,
+        "requires": ["FIS109", "MTM124"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "FIS110",
+        "title": "Fundamentos de Óptica e Quântica",
+        "credits": 30,
+        "requires": ["FIS109", "MTM124"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "MEC124",
+        "title": "Fenômenos de Transporte",
+        "credits": 60,
+        "requires": ["FIS107", "FIS108"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "MTM146",
+        "title": "Matemática Aplicada à Eng. de Controle e Automação",
+        "credits": 60,
+        "requires": ["MTM124", "MTM125", "MTM730"],
+        "quarter": 4,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC721",
+        "title": "Circuitos Digitais",
+        "credits": 60,
+        "requires": ["BCC720"],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT141",
+        "title": "Teoria de Controle I",
+        "credits": 60,
+        "requires": [],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT164",
+        "title": "Eletrotécnica para Controle e Automação",
+        "credits": 60,
+        "requires": [],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT165",
+        "title": "Circuitos e Dispositivos Eletrônicos",
+        "credits": 60,
+        "requires": [],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "CIV107",
+        "title": "Resistência dos Materiais e Estruturas",
+        "credits": 60,
+        "requires": [],
+        "quarter": 5,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC342",
+        "title": "Introução à Otimização",
+        "credits": 60,
+        "requires": ["BCC702", "BCC760"],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT163",
+        "title": "Instrumentação",
+        "credits": 60,
+        "requires": [],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT169",
+        "title": "Acionamentos Elétricos",
+        "credits": 60,
+        "requires": [],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT183",
+        "title": "Teoria de Controle II",
+        "credits": 60,
+        "requires": [],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "MET702",
+        "title": "Engenharia nos Processos de Metalurgia",
+        "credits": 60,
+        "requires": [],
+        "quarter": 6,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC425",
+        "title": "Sistemas Embutidos",
+        "credits": 60,
+        "requires": ["BCC721"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC740",
+        "title": "Inteligência Artificial",
+        "credits": 60,
+        "requires": ["BCC702"],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT166",
+        "title": "Teoria de Controle III",
+        "credits": 60,
+        "requires": [],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT175",
+        "title": "Informática Industrial",
+        "credits": 60,
+        "requires": [],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "MIN107",
+        "title": "Engenharia nos Processos de Mineração",
+        "credits": 60,
+        "requires": [],
+        "quarter": 7,
+        "isCompleted": false
+    },
+    {
+        "id": "BCC722",
+        "title": "Programação de Sistemas em Tempo Real",
+        "credits": 60,
+        "requires": ["BCC425"],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT167",
+        "title": "Sistemas Integrados de Manufatura",
+        "credits": 60,
+        "requires": [],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT181",
+        "title": "Elementos de Robótica",
+        "credits": 60,
+        "requires": [],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT490",
+        "title": "Trabalho Final de Curso I",
+        "credits": 30,
+        "requires": [],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "DIR250",
+        "title": "Introdução ao Direito e Legislação",
+        "credits": 30,
+        "requires": [],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "MEC142",
+        "title": "Acionamentos Fluidomecânicos",
+        "credits": 60,
+        "requires": [],
+        "quarter": 8,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT168",
+        "title": "Interfaceamento de Sistemas",
+        "credits": 60,
+        "requires": [],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "CAT491",
+        "title": "Trabalho Final de Curso II",
+        "credits": 30,
+        "requires": ["CAT490"],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "PRO243",
+        "title": "Organização e Administração I",
+        "credits": 30,
+        "requires": [],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "elt001",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "elt002",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [],
+        "quarter": 9,
+        "isCompleted": false
+    },
+    {
+        "id": "AMB111",
+        "title": "Engenharia Ambiental Básica M",
+        "credits": 30,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "PRO215",
+        "title": "Planejamento e Controle da Produção I",
+        "credits": 60,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "PRO224",
+        "title": "Economia da Engenharia",
+        "credits": 60,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "elt003",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "elt004",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    },
+    {
+        "id": "elt005",
+        "title": "Disciplina Eletiva",
+        "credits": 60,
+        "requires": [],
+        "quarter": 10,
+        "isCompleted": false
+    }
+]
