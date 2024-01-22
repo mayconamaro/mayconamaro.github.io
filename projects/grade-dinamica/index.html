@@ -1,14 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/projects/grade-dinamica/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="/projects/grade-dinamica/scripts.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js" defer></script>
+    <title>Grade Dinâmica</title>
+
+    <!-- Emoji as favicon -->
+    <link rel="icon" href="/assets/images/man_tech.svg">
+
+    <!-- Chrome for android bar color -->
+    <meta name="theme-color" content="#ffae7d">
+    
+    <!-- SEO -->
+    <meta property="og:title" content="Maycon Amaro’s Portfolio" />
+    <meta property="og:locale" content="en" />
+    <meta name="description" content="Computer Science Student, lover of Logics and Language. Studying front-end and design on free time." />
+    <meta property="og:description" content="Computer Science Student, lover of Logics and Language. Studying front-end and design on free time." />
+    <link rel="canonical" href="https://mayconamaro.github.io/" />
+    <meta property="og:url" content="https://mayconamaro.github.io/" />
+    <meta property="og:site_name" content="Maycon Amaro" />
 </head>
 <body>
-    Hello, world!
+    <a href="#main" class="skip-nav">Skip to content</a>
+    <div class="body-layout grade-dinamica">
+    <div class="page-container grade-dinamica">
+        <header class="grade-dinamica">
+            <h1>Grade Dinâmica</h1>
+            <div class="navbar-select-group">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/projects/grade-dinamica/museu/">Versões anteriores</a></li>
+                    </ul>
+                </nav>
+                <p class="credits">Créditos: 
+                    <span id="credit-sum">0</span> (<span id="credit-percentage">0</span>%)
+                </p>
+                <div class="course-select">Selecione o curso: 
+                    <select id="course-select" name="course" class="navbar-select">
+                        <option value="decom">Ciência da Computação</option>
+                        <option value="deurb">Engenharia Urbana</option>
+                        <option value="degeo">Engenharia Geológica</option>
+                        <option value="Action 1">Em breve ;)</option>
+                    </select>
+                </div>
+            </div>
+            <p class="justify">Clique em uma disciplina para marca-lá como concluída, 
+                clique novamente para desmarcar. Ao desmarcar, os seus requisitos
+            serão automaticamente desmarcados.</p>
+        </header>
+
+        <main id="main">
+            <section id="curriculum" class="curriculum">
+                <!-- add rows and columns. columns will relate to quarter -->
+            </section>
+        </main>
+    </div>
+    <footer class="grade-dinamica">
+        <p>Designed and developed by Maycon Amaro</p>
+    </footer>
+    </div>
 </body>
 </html>
