@@ -1,0 +1,672 @@
+[
+    {
+        "id": "BCC701",
+        "title": "Programação de Computadores I",
+        "credits": 60,
+        "quarter": 1,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "MTM122",
+        "title": "Cálculo Diferencial e Integral I",
+        "credits": 90,
+        "quarter": 1,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "MTM131",
+        "title": "Geometria Analítica e Cálculo Vetorial",
+        "credits": 60,
+        "quarter": 1,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "QUI110",
+        "title": "Higiene Ocupacional e Segurança de Laboratório",
+        "credits": 15,
+        "quarter": 1,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "QUI158",
+        "title": "Química Geral A",
+        "credits": 60,
+        "quarter": 1,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "QUI182",
+        "title": "Química Geral Experimental A",
+        "credits": 30,
+        "quarter": 1,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "QUI183",
+        "title": "Introdução à Química Industrial",
+        "credits": 30,
+        "quarter": 1,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "ARQ212",
+        "title": "Expressão Gráfica I",
+        "credits": 60,
+        "quarter": 2,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "FIS106",
+        "title": "Fundamentos de Mecânica",
+        "credits": 60,
+        "quarter": 2,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "GEO104",
+        "title": "Mineralogia",
+        "credits": 60,
+        "quarter": 2,
+        "isCompleted": false,
+        "requires": [
+            "QUI158",
+            "QUI182"
+        ]
+    },
+    {
+        "id": "MTM112",
+        "title": "Introdução à Álgebra Linear",
+        "credits": 60,
+        "quarter": 2,
+        "isCompleted": false,
+        "requires": [
+            "MTM131"
+        ]
+    },
+    {
+        "id": "MTM123",
+        "title": "Cálculo Diferencial e Integral II",
+        "credits": 60,
+        "quarter": 2,
+        "isCompleted": false,
+        "requires": [
+            "MTM122"
+        ]
+    },
+    {
+        "id": "QUI159",
+        "title": "Química Geral B",
+        "credits": 60,
+        "quarter": 2,
+        "isCompleted": false,
+        "requires": [
+            "QUI158",
+            "QUI182"
+        ]
+    },
+    {
+        "id": "QUI184",
+        "title": "Química Geral Experimental B",
+        "credits": 30,
+        "quarter": 2,
+        "isCompleted": false,
+        "requires": [
+            "QUI158",
+            "QUI182"
+        ]
+    },
+    {
+        "id": "EST202",
+        "title": "Estatística e Probabilidade",
+        "credits": 60,
+        "quarter": 3,
+        "isCompleted": false,
+        "requires": [
+            "MTM122"
+        ]
+    },
+    {
+        "id": "FIS109",
+        "title": "Fundamentos de Eletromagnetismo",
+        "credits": 60,
+        "quarter": 3,
+        "isCompleted": false,
+        "requires": [
+            "FIS106",
+            "MTM122"
+        ]
+    },
+    {
+        "id": "MEC119",
+        "title": "Mecânica dos Fluidos",
+        "credits": 60,
+        "quarter": 3,
+        "isCompleted": false,
+        "requires": [
+            "MTM123"
+        ]
+    },
+    {
+        "id": "QUI185",
+        "title": "Química Orgânica A",
+        "credits": 60,
+        "quarter": 3,
+        "isCompleted": false,
+        "requires": [
+            "QUI159",
+            "QUI184"
+        ]
+    },
+    {
+        "id": "QUI186",
+        "title": "Química Orgânica Experimental A",
+        "credits": 30,
+        "quarter": 3,
+        "isCompleted": false,
+        "requires": [
+            "QUI159",
+            "QUI184"
+        ]
+    },
+    {
+        "id": "QUI187",
+        "title": "Físico-Química A",
+        "credits": 60,
+        "quarter": 3,
+        "isCompleted": false,
+        "requires": [
+            "MTM122",
+            "QUI158",
+            "QUI182"
+        ]
+    },
+    {
+        "id": "QUI188",
+        "title": "Físico-Química Experimental A",
+        "credits": 60,
+        "quarter": 3,
+        "isCompleted": false,
+        "requires": [
+            "MTM122",
+            "QUI158",
+            "QUI182"
+        ]
+    },
+    {
+        "id": "QUI189",
+        "title": "Química Inorgânica Teórica",
+        "credits": 30,
+        "quarter": 3,
+        "isCompleted": false,
+        "requires": [
+            "QUI159",
+            "QUI184"
+        ]
+    },
+    {
+        "id": "QUI190",
+        "title": "Química Inorgânica Experimental",
+        "credits": 30,
+        "quarter": 3,
+        "isCompleted": false,
+        "requires": [
+            "QUI159",
+            "QUI184"
+        ]
+    },
+    {
+        "id": "CBI256",
+        "title": "Bioquímica",
+        "credits": 60,
+        "quarter": 4,
+        "isCompleted": false,
+        "requires": [
+            "QUI185",
+            "QUI186"
+        ]
+    },
+    {
+        "id": "MEC174",
+        "title": "Transferência de Calor e Massa I",
+        "credits": 60,
+        "quarter": 4,
+        "isCompleted": false,
+        "requires": [
+            "MEC119"
+        ]
+    },
+    {
+        "id": "QUI191",
+        "title": "Química Orgânica B",
+        "credits": 45,
+        "quarter": 4,
+        "isCompleted": false,
+        "requires": [
+            "QUI185",
+            "QUI186"
+        ]
+    },
+    {
+        "id": "QUI192",
+        "title": "Química Orgânica Experimental B",
+        "credits": 30,
+        "quarter": 4,
+        "isCompleted": false,
+        "requires": [
+            "QUI185",
+            "QUI186"
+        ]
+    },
+    {
+        "id": "QUI193",
+        "title": "Química Analítica A",
+        "credits": 45,
+        "quarter": 4,
+        "isCompleted": false,
+        "requires": [
+            "QUI159"
+        ]
+    },
+    {
+        "id": "QUI194",
+        "title": "Química Analítica Experimental A",
+        "credits": 45,
+        "quarter": 4,
+        "isCompleted": false,
+        "requires": [
+            "QUI184"
+        ]
+    },
+    {
+        "id": "QUI195",
+        "title": "Físico-Química B",
+        "credits": 60,
+        "quarter": 4,
+        "isCompleted": false,
+        "requires": [
+            "QUI187",
+            "QUI188"
+        ]
+    },
+    {
+        "id": "QUI196",
+        "title": "Físico-Química Experimental B",
+        "credits": 60,
+        "quarter": 4,
+        "isCompleted": false,
+        "requires": [
+            "QUI187",
+            "QUI188"
+        ]
+    },
+    {
+        "id": "QUI197",
+        "title": "Química dos Elementos de Transição Teórica",
+        "credits": 30,
+        "quarter": 4,
+        "isCompleted": false,
+        "requires": [
+            "QUI189",
+            "QUI190"
+        ]
+    },
+    {
+        "id": "QUI198",
+        "title": "Química dos Elementos de Transição Experimental",
+        "credits": 30,
+        "quarter": 4,
+        "isCompleted": false,
+        "requires": [
+            "QUI189",
+            "QUI190"
+        ]
+    },
+    {
+        "id": "BCC760",
+        "title": "Cálculo Numérico",
+        "credits": 60,
+        "quarter": 5,
+        "isCompleted": false,
+        "requires": [
+            "BCC701",
+            "MTM122"
+        ]
+    },
+    {
+        "id": "CBI259",
+        "title": "Microbiologia Aplicada à Química Industrial",
+        "credits": 45,
+        "quarter": 5,
+        "isCompleted": false,
+        "requires": [
+            "CBI256"
+        ]
+    },
+    {
+        "id": "FIS108",
+        "title": "Fundamentos de Fluidos, Oscilações e Ondas",
+        "credits": 30,
+        "quarter": 5,
+        "isCompleted": false,
+        "requires": [
+            "FIS106"
+        ]
+    },
+    {
+        "id": "FIS110",
+        "title": "Fundamentos de Óptica e Quântica",
+        "credits": 30,
+        "quarter": 5,
+        "isCompleted": false,
+        "requires": [
+            "FIS109"
+        ]
+    },
+    {
+        "id": "FIS302",
+        "title": "Estrutura da Matéria I",
+        "credits": 60,
+        "quarter": 5,
+        "isCompleted": false,
+        "requires": [
+            "QUI158",
+            "QUI182"
+        ]
+    },
+    {
+        "id": "QUI199",
+        "title": "Métodos Físicos de Análise Orgânica",
+        "credits": 60,
+        "quarter": 5,
+        "isCompleted": false,
+        "requires": [
+            "QUI191",
+            "QUI192"
+        ]
+    },
+    {
+        "id": "QUI201",
+        "title": "Química Analítica B",
+        "credits": 45,
+        "quarter": 5,
+        "isCompleted": false,
+        "requires": [
+            "QUI193",
+            "QUI194"
+        ]
+    },
+    {
+        "id": "QUI202",
+        "title": "Química Analítica Experimental B",
+        "credits": 45,
+        "quarter": 5,
+        "isCompleted": false,
+        "requires": [
+            "QUI193",
+            "QUI194"
+        ]
+    },
+    {
+        "id": "QUI294",
+        "title": "Operações Unitárias I",
+        "credits": 45,
+        "quarter": 5,
+        "isCompleted": false,
+        "requires": [
+            "MEC119",
+            "QUI195",
+            "QUI196"
+        ]
+    },
+    {
+        "id": "PRO244",
+        "title": "Organização e Administração II",
+        "credits": 30,
+        "quarter": 6,
+        "isCompleted": false,
+        "requires": [1200]
+    },
+    {
+        "id": "QUI148",
+        "title": "Análise Química de Solo, Ar e Água",
+        "credits": 60,
+        "quarter": 6,
+        "isCompleted": false,
+        "requires": [
+            "QUI201",
+            "QUI202"
+        ]
+    },
+    {
+        "id": "QUI154",
+        "title": "Análise Instrumental A",
+        "credits": 60,
+        "quarter": 6,
+        "isCompleted": false,
+        "requires": [
+            "QUI201",
+            "QUI202"
+        ]
+    },
+    {
+        "id": "QUI160",
+        "title": "Materiais Poliméricos",
+        "credits": 60,
+        "quarter": 6,
+        "isCompleted": false,
+        "requires": [
+            "QUI185",
+            "QUI186"
+        ]
+    },
+    {
+        "id": "QUI169",
+        "title": "Química Ambiental A",
+        "credits": 60,
+        "quarter": 6,
+        "isCompleted": false,
+        "requires": [
+            "QUI185",
+            "QUI186"
+        ]
+    },
+    {
+        "id": "QUI174",
+        "title": "Introdução a Materiais",
+        "credits": 30,
+        "quarter": 6,
+        "isCompleted": false,
+        "requires": [
+            "QUI187",
+            "QUI188"
+        ]
+    },
+    {
+        "id": "QUI203",
+        "title": "Estequiometria Industrial",
+        "credits": 30,
+        "quarter": 6,
+        "isCompleted": false,
+        "requires": [
+            "QUI193",
+            "QUI194"
+        ]
+    },
+    {
+        "id": "QUI295",
+        "title": "Operações Unitárias II",
+        "credits": 45,
+        "quarter": 6,
+        "isCompleted": false,
+        "requires": [
+            "MEC174",
+            "QUI294"
+        ]
+    },
+    {
+        "id": "FAR617",
+        "title": "Biotecnologia I",
+        "credits": 45,
+        "quarter": 7,
+        "isCompleted": false,
+        "requires": [
+            "CBI259"
+        ]
+    },
+    {
+        "id": "PRO241",
+        "title": "Economia I",
+        "credits": 30,
+        "quarter": 7,
+        "isCompleted": false,
+        "requires": [1200]
+    },
+    {
+        "id": "QUI149",
+        "title": "Técnicas de Cromatografia Aplicada ao Meio Ambiente",
+        "credits": 60,
+        "quarter": 7,
+        "isCompleted": false,
+        "requires": [
+            "QUI201",
+            "QUI202"
+        ]
+    },
+    {
+        "id": "QUI291",
+        "title": "Processos Orgânicos I",
+        "credits": 60,
+        "quarter": 7,
+        "isCompleted": false,
+        "requires": [
+            "QUI295"
+        ]
+    },
+    {
+        "id": "QUI296",
+        "title": "Resíduos Sólidos e Efluentes Líquidos",
+        "credits": 30,
+        "quarter": 7,
+        "isCompleted": false,
+        "requires": [
+            "QUI185",
+            "QUI186"
+        ]
+    },
+    {
+        "id": "QUI297",
+        "title": "Processos Inorgânicos",
+        "credits": 60,
+        "quarter": 7,
+        "isCompleted": false,
+        "requires": [
+            "QUI189",
+            "QUI190",
+            "QUI294"
+        ]
+    },
+    {
+        "id": "ELT001",
+        "title": "Eletiva I (total 90 horas)",
+        "credits": 45,
+        "quarter": 7,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "ATV100",
+        "title": "Atividades Complementares",
+        "credits": 90,
+        "quarter": 7,
+        "isCompleted": false,
+        "requires": []
+    },
+    {
+        "id": "ALI229",
+        "title": "Processos de Conservação de Alimentos",
+        "credits": 30,
+        "quarter": 8,
+        "isCompleted": false,
+        "requires": [
+            "CBI259"
+        ]
+    },
+    {
+        "id": "DIR751",
+        "title": "Direito Ambiental",
+        "credits": 30,
+        "quarter": 8,
+        "isCompleted": false,
+        "requires": [1500]
+    },
+    {
+        "id": "PRO242",
+        "title": "Economia II",
+        "credits": 30,
+        "quarter": 8,
+        "isCompleted": false,
+        "requires": [
+            "PRO241"
+        ]
+    },
+    {
+        "id": "QUI163",
+        "title": "Projetos Ambientais",
+        "credits": 30,
+        "quarter": 8,
+        "isCompleted": false,
+        "requires": [
+            "QUI169",
+            "QUI295"
+        ]
+    },
+    {
+        "id": "QUI164",
+        "title": "Estágio Supervisionado",
+        "credits": 160,
+        "quarter": 8,
+        "isCompleted": false,
+        "requires": [
+            "QUI154",
+            "QUI294"
+        ]
+    },
+    {
+        "id": "QUI292",
+        "title": "Processos Orgânicos II",
+        "credits": 30,
+        "quarter": 8,
+        "isCompleted": false,
+        "requires": [
+            "QUI291"
+        ]
+    },
+    {
+        "id": "QUI293",
+        "title": "Cinética e Reatores Industriais",
+        "credits": 60,
+        "quarter": 8,
+        "isCompleted": false,
+        "requires": [
+            "QUI291",
+            "QUI297"
+        ]
+    },
+    {
+        "id": "ELT002",
+        "title": "Eletiva II (total 90 horas)",
+        "credits": 45,
+        "quarter": 8,
+        "isCompleted": false,
+        "requires": []
+    }
+]
