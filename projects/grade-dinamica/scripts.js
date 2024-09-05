@@ -3,6 +3,7 @@ var creditSum = 0;
 var totalCredits = 0;
 const curriculumContainer = document.getElementById('curriculum');
 const selector = document.getElementById('course-select');
+const clearButton = document.getElementById('clear-button');
 var actualCourse = selector.value;
 
 selector.addEventListener("change", () => {
@@ -10,6 +11,13 @@ selector.addEventListener("change", () => {
     loadJSON(response => {
         courses = JSON.parse(response);
     }, actualCourse);
+    createGrid();
+});
+
+clearButton.addEventListener("click", () => {
+    courses.forEach(course => {
+        course.isCompleted = false;
+    });
     createGrid();
 });
 
