@@ -422,6 +422,7 @@ p.credits {
     cursor: pointer;
     font-family: 'Source Serif Pro', serif;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.15s;
 }
 
 .clear-button:hover {
